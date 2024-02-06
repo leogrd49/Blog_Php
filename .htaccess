@@ -1,0 +1,7 @@
+ErrorDocument 404 Pages\404.php
+
+RewriteEngine On
+
+RewriteRule ^404/$ Pages\index.php?page=404 [L]
+
+DirectoryIndex Pages\index.php
