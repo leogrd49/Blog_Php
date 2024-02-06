@@ -18,6 +18,35 @@ $login = $temp->fetch();
 </form>
 
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="login-container">
+    <form action="connexion.php" method="post" class="login-form">
+        <h2>Connexion</h2>
+        <div class="input-group">
+            <label for="mail">E-mail</label>
+            <input type="text" name="mail" id="mail">
+        </div>
+        <div class="input-group">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp">
+        </div>
+        <button type="submit" class="btn-submit">Se connecter</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
 <?php
 if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'])){
 
@@ -25,3 +54,4 @@ if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'])){
         echo 'gg';
 }
 ?>
+
