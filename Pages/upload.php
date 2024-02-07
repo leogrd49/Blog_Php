@@ -73,8 +73,10 @@ if(isset($_POST["submit"])) {
         }
     }
 }
-if (isset($_REQUEST["title"]));
-$sql = 'INSERT INTO image (lien,alt,title) VALUES($target_file,$_REQUEST["title"],$_REQUEST["title"]) ;';
-$temp = $pdo->query($sql);
-$image = $temp->fetch();
+if (isset($_REQUEST["title"])){
+    $description = $_REQUEST["title"];
+    $sql = "INSERT INTO image (lien,alt,title) VALUES('$target_file','$description','$description') ;";
+    $temp = $pdo->query($sql);
+    $image = $temp->fetch();
+}
 ?>
