@@ -10,6 +10,7 @@
     <form action="upload.php" method="post" enctype="multipart/form-data">
         Sélectionnez une image à télécharger :
         <input type="file" name="fileToUpload" id="fileToUpload">
+        <label>Courte description de la photo</label>
         <input type="text" name="title">
         <input type="submit" value="Télécharger l'image" name="submit">
     </form>
@@ -20,9 +21,6 @@
 
 include 'connect_base.php';
 
-$sql = 'INSERT INTO image (lien,alt,title) VALUES($target_file,$description,$description) ;';
-$temp = $pdo->query($sql);
-$image = $temp->fetch();
 
 // Vérification si le formulaire a été soumis
 if(isset($_POST["submit"])) {
