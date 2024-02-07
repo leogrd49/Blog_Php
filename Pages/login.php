@@ -1,11 +1,6 @@
 <?php
 include 'navbar.php';
 include 'connect_base.php';
-
-$sql = 'SELECT * FROM admin;';
-$temp = $pdo->query($sql);
-$login = $temp->fetch();
-
 ?>
 
 
@@ -17,6 +12,17 @@ $login = $temp->fetch();
     <input type="submit">
 </form>
 
+
+
+
+
+<?php
+if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'])){
+
+    if ($_REQUEST['mail']==$login[0] and $_REQUEST['mdp'] == $login[1]);
+        echo 'gg';
+}
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -41,17 +47,14 @@ $login = $temp->fetch();
         </div>
         <button type="submit" class="btn-submit">Se connecter</button>
     </form>
+
+    <?php
+    $sql = 'SELECT * FROM admin;';
+    $temp = $pdo->query($sql);
+    $login = $temp->fetch();
+    ?>
+
 </div>
 
 </body>
 </html>
-
-
-<?php
-if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'])){
-
-    if ($_REQUEST['mail']==$login[0] and $_REQUEST['mdp'] == $login[1]);
-        echo 'gg';
-}
-?>
-

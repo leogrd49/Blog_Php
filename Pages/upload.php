@@ -10,12 +10,18 @@
     <form action="upload.php" method="post" enctype="multipart/form-data">
         Sélectionnez une image à télécharger :
         <input type="file" name="fileToUpload" id="fileToUpload">
+        <label>Courte description de la photo</label>
+        <input type="text" name="title">
         <input type="submit" value="Télécharger l'image" name="submit">
     </form>
 </body>
 </html>
 
 <?php
+
+include 'connect_base.php';
+
+
 // Vérification si le formulaire a été soumis
 if(isset($_POST["submit"])) {
     $target_dir = "../uploads/"; // Répertoire où seront stockées les images (créez ce répertoire s'il n'existe pas)
@@ -67,23 +73,8 @@ if(isset($_POST["submit"])) {
         }
     }
 }
-
-
-// Affichage de l'image téléchargée
-if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"]["tmp_name"])) {
-    $target_dir = "../uploads/"; // Répertoire où seront stockées les images (créez ce répertoire s'il n'existe pas)
-    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); // Chemin complet du fichier
-    
-    // Vérification si le fichier image est réel ou faux
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-        echo "Le fichier est une image - " . $check["mime"] . ".";
-        echo "<br>";
-        echo "Image téléchargée : <br>";
-        echo "<img src='$target_file' alt='Image téléchargée' width='200'>";
-    } else {
-        echo "Le fichier n'est pas une image.";
-    }
-}
-
+if (isset($_REQUEST["title"]));
+$sql = 'INSERT INTO image (lien,alt,title) VALUES($target_file,$_REQUEST["title"],$_REQUEST["title"]) ;';
+$temp = $pdo->query($sql);
+$image = $temp->fetch();
 ?>
