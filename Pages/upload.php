@@ -67,4 +67,23 @@ if(isset($_POST["submit"])) {
         }
     }
 }
+
+
+// Affichage de l'image téléchargée
+if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"]["tmp_name"])) {
+    $target_dir = "../uploads/"; // Répertoire où seront stockées les images (créez ce répertoire s'il n'existe pas)
+    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); // Chemin complet du fichier
+    
+    // Vérification si le fichier image est réel ou faux
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+        echo "Le fichier est une image - " . $check["mime"] . ".";
+        echo "<br>";
+        echo "Image téléchargée : <br>";
+        echo "<img src='$target_file' alt='Image téléchargée' width='200'>";
+    } else {
+        echo "Le fichier n'est pas une image.";
+    }
+}
+
 ?>
