@@ -10,12 +10,20 @@
     <form action="upload.php" method="post" enctype="multipart/form-data">
         Sélectionnez une image à télécharger :
         <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="text" name="title">
         <input type="submit" value="Télécharger l'image" name="submit">
     </form>
 </body>
 </html>
 
 <?php
+
+include 'connect_base.php';
+
+$sql = 'INSERT INTO image (lien,alt,title) VALUES($target_file,$description,$description) ;';
+$temp = $pdo->query($sql);
+$image = $temp->fetch();
+
 // Vérification si le formulaire a été soumis
 if(isset($_POST["submit"])) {
     $target_dir = "../uploads/"; // Répertoire où seront stockées les images (créez ce répertoire s'il n'existe pas)
@@ -67,4 +75,8 @@ if(isset($_POST["submit"])) {
         }
     }
 }
+if (isset($_REQUEST["title"]));
+$sql = 'INSERT INTO image (lien,alt,title) VALUES($target_file,$_REQUEST["title"],$_REQUEST["title"]) ;';
+$temp = $pdo->query($sql);
+$image = $temp->fetch();
 ?>
