@@ -15,17 +15,17 @@
 
     <div class="navbar-side">
         <div class="logo-conatainer-navbar">
-            <img src="img/icons/logo.png" alt="logo de l'entreprise">
+            <img src="../img/icons/logo.png" alt="logo de l'entreprise">
         </div>
         <div class="icons-container-navbar">
-            <div><a href=""><img src="img/icons/Home.png" alt="icons pour retourner au home"></a></div>
-            <div><a href=""><img src="img/icons/blog.png" alt="icons pour aller à la page de navigation"></a></div>
-            <div><a href=""><img src="img/icons/create.png" alt="icons pour aller à la page de creation"></a></div>
-            <div><a href=""><img src="img/icons/profile.png" alt="icons pour aller à la page profil"></a></div>
-            <div><a href=""><img src="img/icons/setting.png" alt="icons pour aller à la page settings"></a></div>
+            <div><a href="index.php"><img src="../img/icons/Home.png" alt="icons pour retourner au home"></a></div>
+            <div><a href="blog.php"><img src="../img/icons/blog.png" alt="icons pour aller à la page de navigation"></a></div>
+            <div><a href="create.php"><img src="../img/icons/create.png" alt="icons pour aller à la page de creation"></a></div>
+            <div><a href="auteur.php"><img src="../img/icons/profile.png" alt="icons pour aller à la page auteur"></a></div>
+            <div><a href="settings.php"><img src="../img/icons/setting.png" alt="icons pour aller à la page settings"></a></div>
         </div>
         <div class="login-conatainer-navbar">
-            <img src="img/icons/logout.png" alt="icons de logout">
+            <img src="../img/icons/logout.png" alt="icons de logout">
         </div>
     </div>
 
