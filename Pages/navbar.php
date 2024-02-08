@@ -24,9 +24,10 @@
             <div><a href="auteur.php"><img src="../img/icons/profile.png" alt="icons pour aller à la page auteur"></a></div>
             <div><a href="settings.php"><img src="../img/icons/setting.png" alt="icons pour aller à la page settings"></a></div>
         </div>
-        <div class="login-conatainer-navbar">
+        <div class="login-container-navbar">
             <img src="../img/icons/logout.png" alt="icons de logout">
         </div>
+    <div class="navbar-side-dropdown-content"></div>
     </div>
 
 <!-- Fin Navbar -->
