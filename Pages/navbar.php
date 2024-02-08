@@ -14,20 +14,19 @@
     <!-- Navbar -->
 
     <div class="navbar-side">
-        <div class="logo-conatainer-navbar">
+        <div class="logo-container-navbar">
             <img src="../img/icons/logo.png" alt="logo de l'entreprise">
         </div>
         <div class="icons-container-navbar">
-            <div><a href="index.php"><img src="../img/icons/Home.png" alt="icons pour retourner au home"></a></div>
-            <div><a href="blog.php"><img src="../img/icons/blog.png" alt="icons pour aller à la page de navigation"></a></div>
-            <div><a href="create.php"><img src="../img/icons/create.png" alt="icons pour aller à la page de creation"></a></div>
-            <div><a href="auteur.php"><img src="../img/icons/profile.png" alt="icons pour aller à la page auteur"></a></div>
-            <div><a href="settings.php"><img src="../img/icons/setting.png" alt="icons pour aller à la page settings"></a></div>
+        <a href="index.php"><div class="row"><img src="../img/icons/Home.png" alt="icons pour retourner au home"><p class="hidden">Home</p></div></a>
+        <a href="index.php"><div class="row"><img src="../img/icons/blog.png" alt="icons pour aller à la page de navigation"><p class="hidden">Blog</p></div></a>
+        <a href="index.php"><div class="row"><img src="../img/icons/create.png" alt="icons pour aller à la page de creation"><p class="hidden">Create</p></div></a>
+        <a href="index.php"><div class="row"><img src="../img/icons/profile.png" alt="icons pour aller à la page auteur"><p class="hidden">Authors</p></div></a>
+        <a href="index.php"><div class="row"><img src="../img/icons/setting.png" alt="icons pour aller à la page settings"><p class="hidden">Settings</p></div></a>
         </div>
         <div class="login-container-navbar">
-            <img src="../img/icons/logout.png" alt="icons de logout">
+        <a href="index.php"><div class="row"><img src="../img/icons/logout.png" alt="se logout"><p class="hidden">Logout</p></div></a>
         </div>
-    <div class="navbar-side-dropdown-content"></div>
     </div>
 
 <!-- Fin Navbar -->

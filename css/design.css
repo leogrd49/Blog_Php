@@ -72,8 +72,9 @@ body {
 /* Navbar */
 
 .navbar-side{
+    transition: 0.3s;
     display: inline-flex;
-    position: absolute;
+    position: fixed;
     height: 710px;
     width: 80px;
     flex-direction: column;
@@ -82,25 +83,49 @@ body {
     margin-left: 30px;
     margin-top: 30px;
     background: #031C30;
-    z-index: 0;
 }
-.logo-conatainer-navbar{
+.logo-container-navbar{
     margin-bottom: 50px;
     margin-top: 20px;
     margin-left: 20px;
 }
 .icons-container-navbar{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    margin-bottom: 270px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 280px;
     margin-left: 8px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
 }
 .login-container-navbar{
     margin-left: 8px;
 }
 .navbar-side:hover{
-    transform: 1s;
+    transition: 0.3s;
     width: 325px;
+}
+.navbar-side:hover .hidden {
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.navbar-side a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.navbar-side p{
+    margin-top: 15px;
+    padding-right: 190px;
+}
+.navbar-side a:hover{
+    background-color: #55DBCB;
+}
+.login-container-navbar a:hover{
+    background-color: #55DBCB;
 }
 
 /* Fin Navbar */
