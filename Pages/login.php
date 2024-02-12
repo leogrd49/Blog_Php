@@ -4,13 +4,7 @@ include 'connect_base.php';
 ?>
 
 
-<form action="connexion.php" method="post">
-    <label>e-mail</label>
-    <input type="text" name="mail">
-    <label>Mot de passe</label>
-    <input type="text" name='mdp'>
-    <input type="submit">
-</form>
+
 
 
 
