@@ -19,7 +19,13 @@ body {
 }
 
 .login-form {
-    background-color: #031C30;
+
+    background: rgba(3, 28, 48, 0.70);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
     padding: 60px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -58,7 +64,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #031C30;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -67,7 +73,7 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: #0056b3;
+    background-color: #55dbcb;
 }
 
 .login-success {
@@ -88,10 +94,16 @@ body {
 .legal-cgs a{
     text-decoration: none;
     color: #fff;
+    border: #0056b3;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #031c30;
+    transition: background-color 0.3s ease;
 }
 
 .legal-cgs a:hover{
     border: #55dbcb;
+    padding: 10px;
     border-radius: 5px;
     background-color: #55dbcb;
 }
