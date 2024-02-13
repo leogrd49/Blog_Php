@@ -1,5 +1,6 @@
 <?php
-    include 'connect_base.php'
+    include 'connect_base.php';
+    include 'navbar.php';
 ?>
 
 <!doctype html>

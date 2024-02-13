@@ -1,7 +1,7 @@
 body {
     font-family: 'Poly', serif;
     background-color: #f4f4f4;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 1200px;
 }
@@ -164,9 +164,4 @@ body {
     width: 310px;
 }
 
-<<<<<<< Updated upstream
 /* Fin Navbar */
-=======
-
-/* Fin Navbar */
->>>>>>> Stashed changes
