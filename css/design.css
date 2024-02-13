@@ -1,9 +1,14 @@
 body {
     font-family: 'Poly', serif;
-    background-color: #f4f4f4;
+    background-image:url('https://i.gifer.com/origin/46/462c6f5f67c13830cd9fcdbfc7b55ded_w200.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    height:100%;
     margin: 0;
     padding: 0;
-    width: 1200px;
+
 }
 
 .login-container {
@@ -15,14 +20,17 @@ body {
 
 .login-form {
     background-color: #031C30;
-    padding: 20px;
+    padding: 60px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .login-form h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #fff;
 }
 
@@ -69,6 +77,23 @@ body {
     padding: 10px;
     margin-top: 20px;
     border-radius: 4px;
+}
+
+.legal-cgs{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+.legal-cgs a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.legal-cgs a:hover{
+    border: #55dbcb;
+    border-radius: 5px;
+    background-color: #55dbcb;
 }
 
 /* Navbar */

@@ -49,6 +49,11 @@ if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'])){
     ?>
 
 </div>
+<footer>
+    <div class="legal-cgs">
+        <a href="legal.php">Condition générale de sécurité</a>
+    </div>
+</footer>
 
 </body>
 </html>
