@@ -1,5 +1,5 @@
 <?php
-
+    include 'connect_base.php'
 ?>
 
 <!doctype html>
@@ -191,7 +191,45 @@
                     </div>
                 </div>
             </div>
-
+<?php 
+    function blog($article)
+    {
+        echo '<div class="blog-area pos-relative pt-130 pb-130">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="news-wrapper mb-60">
+                                <div class="news-img">
+                                    <a href="blog-details.html"><img src="'.$article["lien_image"].'" alt="'.$article["description"].'"></a>
+                                </div>
+                                <div class="news-box">
+                                    <div class="news-text">
+                                        <div class="blog-meta-top mb-15">
+                                            <span> <a href="#"></a> </span>
+                                            <span>-</span>
+                                            <span><a href="blog-details.html">'.$article["date_sortie"].'</a></span>
+                                        </div>
+                                        <h4><a href="blog-details.html">'.$article["titre"].'</a></h4>
+                                        <div class="news-meta">
+                                            <span> <a href="#"><i class="ti-user"></i> De Cock</a> </span>
+                                            <span><a href="blog-details.html"><i class="ti-comment"></i> 02 Comment</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>';
+    }
+        $sql = 'SELECT * FROM article;';
+        $temp = $pdo->query($sql);
+        while ($article = $temp->fetch()){
+            //var_dump($article);
+            blog($article);
+        }
+?>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/one-page-nav-min.js"></script>
             <script src="js/jquery.scrollUp.min.js"></script>
