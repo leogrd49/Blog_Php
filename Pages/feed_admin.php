@@ -37,7 +37,7 @@ include  'navbar.php';
                 .'<td>'.$resultat['titre'].'</td>'
                 .'<td>'.$resultat['description'].'</td>'
                 .'<td>'.$resultat['title'].'</td>'
-                .'<td><a href="modif.php?id='.$resultat['id_article'].'"> Modifier </a><a href="feed_admin.php?sup='.$resultat['id_article'].'"> suppr </a></td>'.'</tr>';
+                .'<td><a classe="action-table" href="modif.php?id='.$resultat['id_article'].'"> Modifier </a><a  classe="action-table" href="feed_admin.php?sup='.$resultat['id_article'].'"> suppr </a></td>'.'</tr>';
             }
             
             if (isset($_REQUEST['sup'])){
