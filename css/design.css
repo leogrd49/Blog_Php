@@ -2,7 +2,6 @@ body {
     font-family: 'Poly', serif;
     background-color: #f4f4f4;
     margin: 0 auto;
-    background-image:url('https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-dark-blue-background-hd-image_264066.jpg');
     background-size:100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -13,6 +12,78 @@ body {
 }
 
 /*login*/
+
+/* Home */
+
+.home-body {
+    border: 0;
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.home-h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.left {
+    position: relative;
+    background: linear-gradient(180deg, #A982FF 0%, #55DBCB 100%);
+    width: 50%;
+    height: 100vh;
+}
+
+.home-rose img{
+    margin-left: 3%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    font-weight: 300;
+}
+
+    .content > p {
+        margin-bottom: 30px;
+    }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.connect {
+    display: flex;
+    width: 185px;
+    height: 68px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-top: 2%;
+    border-radius: 10px;
+    background: #2F2F2F;
+}
+
+    .connect > p {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+/* Fin home */
+
+/* Login */
 
 .login-container {
     display: flex;
