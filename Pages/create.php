@@ -1,6 +1,7 @@
 <?php
 
 include 'connect_base.php';
+include 'navbar.php';
 // Initialisation des variables vides
 $target_file = '';
 if(isset($_POST["submit"])) {
