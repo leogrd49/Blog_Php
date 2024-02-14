@@ -18,7 +18,7 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia in quo unde tempora placeat, 
             similique id et illo, dicta consequuntur ut itaque maxime quam. Adipisci fugiat omnis beatae 
             nemo ipsa?</p>
-        <a class="connect" href="blog.php">
+        <a class="connect blog-a" href="blog.php">
             <p>Continuer</p>
         </a>
     </div>
