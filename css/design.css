@@ -1,6 +1,6 @@
 body {
     font-family: 'Poly', serif;
-    background-color: #f4f4f4;
+    background-color: #F3ECFF;
     margin: 0 auto;
     background-size:100%;
     background-repeat: repeat-y;
@@ -11,7 +11,10 @@ body {
     padding: 0;
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 /* Home */
 
 .home-body {
@@ -53,7 +56,7 @@ body {
         margin-bottom: 30px;
     }
 
-a {
+.home-a{
     text-decoration: none;
     color: white;
 }
@@ -81,6 +84,53 @@ a {
     }
 
 /* Fin home */
+
+
+/* Blog */
+
+.carte-blog{
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    padding-top: 50px;
+}
+.carte-blog img{
+    width: 400px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.blog-img-container{
+    position: relative;
+    margin-bottom: 100px;
+}
+.white-card{
+    position: absolute;
+    bottom: -40px;
+    left: 85px;
+    width: 330px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+}
+.titre-blog{
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+.txt-blog{
+    margin: 5px 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+.txt-blog-2{
+    margin: 0 20px;
+    font-size: 12px;
+    text-align: right;
+}
+/* Fin Blog */
+
 
 /* Login */
 
@@ -182,6 +232,9 @@ a {
     border-radius: 5px;
     background-color: #55dbcb;
 }
+
+/* fin login */
+
 
 /*feed_admin*/
 
