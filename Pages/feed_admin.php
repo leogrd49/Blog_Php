@@ -41,7 +41,7 @@ include 'connect_base.php'
             <?php
             
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                header("Location: connexion.php");
+                header("Location: feed_admin.php");
                 exit();
             }
             ?>
