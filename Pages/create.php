@@ -73,27 +73,36 @@ if(isset($_POST["submit"])) {
 </head>
 <body>
   <form action="create.php" method="post">
-    <label for="titre">Titre de votre blog</label>
-    <input type="text" name='titre'>
-    <label for="auteur">Votre nom</label>
-    <input type="text" name='auteur'>
-    <label for="">Catégorie</label>
-    <select name="categorie">
-      <option value="1">Sport</option>
-      <option value="2">Science</option>
-      <option value="3">Histoire</option>
-      <option value="4">Polotique</option>
-      <option value="5">People</option>
-      <option value="6">Insolite</option>
+  <div class="tbc-form">
+      <h2>Créer votre blog</h2>
+      <div class="input-group">
+        <label for="titre">Titre de votre blog</label>
+        <input type="text" name='titre'>
+      </div>
+      <div class="input-group">
+        <label for="auteur">Votre nom</label>
+        <input type="text" name='auteur'>
+      </div>
+      <div class="cate-group">
+        <label for="">Catégorie</label>
+        <select name="categorie">
+          <option value="1">Sport</option>
+          <option value="2">Science</option>
+          <option value="3">Histoire</option>
+          <option value="4">Polotique</option>
+          <option value="5">People</option>
+          <option value="6">Insolite</option>
+        </select>
+      </div>
       Sélectionnez une image à télécharger :
       <input type="file" name="fileToUpload" id="fileToUpload">
       <label>Courte description de la photo</label> 
-      
+          
       <input type="text" name="title">
-    </select>
-    <textarea name="description"></textarea>
-    
-  <button type="submit">Poster</button>
+        
+      <textarea name="description"></textarea>
+        
+      <button type="submit">Poster</button>
   </form>
  
   

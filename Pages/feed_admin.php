@@ -1,5 +1,6 @@
 <?php
-include 'connect_base.php'
+include 'connect_base.php';
+include  'navbar.php';
 ?>
 
 
@@ -13,7 +14,17 @@ include 'connect_base.php'
     
 </head>
 <body>
-    <table border="1">
+    <table class="table_feed"  border="1">
+    <tr>
+        <th>ID</th>
+        <th>Auteur</th>
+        <th>Catégorie</th>
+        <th>Date de publication</th>
+        <th>Titre</th>
+        <th>Description</th>
+        <th>Titre photo</th>
+        <th>Action</th>
+    </tr>
         <?php
             $sql = "SELECT * FROM article ;";
             $temp = $pdo->query($sql);

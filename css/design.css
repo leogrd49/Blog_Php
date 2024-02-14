@@ -11,6 +11,7 @@ body {
     padding: 0;
 }
 
+
 /* Home */
 
 .home-body {
@@ -156,6 +157,8 @@ a {
     border-radius: 4px;
 }
 
+/* Legal */
+
 .legal-cgs{
     display: flex;
     justify-content: right;
@@ -180,8 +183,116 @@ a {
     background-color: #55dbcb;
 }
 
-/* Fin login */
+/*feed_admin*/
 
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #031c30;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Editot Text*/
+
+.tbc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tbc-form {
+    background: rgba(3, 28, 48, 0.70);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.tbc-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.cate-group label{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.cate-group select[name="categorie"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; 
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+  }
+  
+ 
+  .cate-group select[name="categorie"] option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff; 
+    color: #333;
+  }
+
+  .cate-group select[name="categorie"] option:hover {
+    background-color: #f0f0f0; 
+  }
+  
 /* Navbar */
 
 .navbar-side{
