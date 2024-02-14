@@ -345,6 +345,10 @@ a:hover {
 
 /* Fin Editeur Text */
   
+.box-txt{
+    width: 800px;
+}
+
 /* Navbar */
 
 .navbar-side{
