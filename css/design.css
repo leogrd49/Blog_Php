@@ -9,7 +9,6 @@ body {
     height:100%;
     margin: 0;
     padding: 0;
-
 }
 
 /* Home */
@@ -92,7 +91,6 @@ a {
 }
 
 .login-form {
-
     background: rgba(3, 28, 48, 0.70);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
