@@ -1,6 +1,12 @@
 body {
     font-family: 'Poly', serif;
     background-color: #f4f4f4;
+    margin: 0 auto;
+    background-image:url('https://i.gifer.com/origin/46/462c6f5f67c13830cd9fcdbfc7b55ded_w200.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
     height:100%;
     margin: 0;
     padding: 0;
