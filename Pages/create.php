@@ -1,6 +1,8 @@
 <?php
 
 include 'connect_base.php';
+// Initialisation des variables vides
+$target_file = '';
 if(isset($_POST["submit"])) {
   $target_dir = "../uploads/"; 
   $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); 
@@ -54,13 +56,10 @@ if(isset($_POST["submit"])) {
     $description = $_REQUEST['description'];
     $title = $_REQUEST['title'];
     $date = date('Y/m/d');
-    $sql = "INSERT INTO article (auteur,id_categorie,titre,description,lien_image,title) VALUES('$auteur','$categorie','$titre','$description','$target_file','$title') ;";
+    $sql = "INSERT INTO article (auteur,id_categorie,titre,date_sortie,description,lien_image,title) VALUES('$auteur','$categorie','$titre','$date','$description','$target_file','$title') ;";
     $temp = $pdo->exec($sql);
   }
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    header("Location: create.php");
-    exit();
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +71,7 @@ if(isset($_POST["submit"])) {
 
 </head>
 <body>
-  <form action="create.php" method="post">
+  <form action="create.php" method="post" enctype='multipart/form-data'>
   <div class="tbc-form">
       <h2>Créer votre blog</h2>
       <div class="input-group">
@@ -102,17 +101,12 @@ if(isset($_POST["submit"])) {
         
       <textarea name="description"></textarea>
         
-      <button type="submit">Poster</button>
+      <input type="submit" name="submit" value="Poster">
+  </div>
   </form>
- 
-  
-    
-    
 
 </body>
 </html>
-
-
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
 
