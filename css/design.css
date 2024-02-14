@@ -90,7 +90,8 @@ body {
 .legal-cgs{
     display: flex;
     justify-content: right;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .legal-cgs a{
