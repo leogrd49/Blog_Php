@@ -1,5 +1,5 @@
 <?php
-
+include 'navbar.php';
 include 'connect_base.php';
 include 'navbar.php';
 // Initialisation des variables vides
@@ -73,7 +73,7 @@ if(isset($_POST["submit"])) {
 
 </head>
 <body>
-  <form action="create.php" method="post" enctype='multipart/form-data'>
+  <form action="create.php" method="post">
   <div class="tbc-form">
       <h2>Créer votre blog</h2>
       <div class="input-group">
@@ -103,9 +103,12 @@ if(isset($_POST["submit"])) {
         
       <textarea name="description"></textarea>
         
-      <input type="submit" name="submit" value="Poster">
-  </div>
+      <button type="submit">Poster</button>
   </form>
+ 
+  
+    
+    
 
 </body>
 </html>
