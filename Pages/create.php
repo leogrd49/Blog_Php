@@ -12,22 +12,31 @@ include 'navbar.php';
 </head>
 <body>
   
-  <form>
-    <label for="titre">Titre de votre blog</label>
-    <input type="text" name='titre'>
-    <label for="auteur">Votre nom</label>
-    <input type="text" name='auteur'>
-    <label for="">Catégorie</label>
-    <select name="categorie">
-      <option value="1">Sport</option>
-      <option value="2">Science</option>
-      <option value="3">Histoire</option>
-      <option value="4">Polotique</option>
-      <option value="5">People</option>
-      <option value="6">Insolite</option>
-    </select>
-
+  <form class="tbs-container">
+    <div class="tbc-form">
+      <h2>Créer votre blog</h2>
+      <div class="input-group">
+        <label for="titre">Titre de votre blog</label>
+        <input type="text" name='titre'>
+      </div>
+      <div class="input-group">
+        <label for="auteur">Votre nom</label>
+        <input type="text" name='auteur'>
+      </div>
+      <div class="cate-group">
+        <label for="">Catégorie</label>
+        <select name="categorie">
+          <option value="1">Sport</option>
+          <option value="2">Science</option>
+          <option value="3">Histoire</option>
+          <option value="4">Politique</option>
+          <option value="5">People</option>
+          <option value="6">Insolite</option>
+        </select>
+      </div>
+    </div>
   </form>
+
   <textarea name="description"></textarea>
   <h1>Upload d'image</h1>
     <form action="upload.php" method="post" enctype="multipart/form-data">
