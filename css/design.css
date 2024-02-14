@@ -293,6 +293,10 @@ a:hover {
     background-color: #f0f0f0; 
   }
   
+.box-txt{
+    width: 800px;
+}
+
 /* Navbar */
 
 .navbar-side{
