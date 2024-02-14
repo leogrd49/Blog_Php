@@ -138,7 +138,7 @@ body {
 }
 
 .login-form {
-    background: rgba(3, 28, 48, 0.70);
+    background: #A982FF;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.9px);
@@ -155,7 +155,7 @@ body {
 .login-form h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #fff;
+    color: #000;
 }
 
 .input-group {
@@ -182,8 +182,8 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: #031C30;
-    color: #fff;
+    background-color: #E0CEFF;
+    color: #000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -214,11 +214,11 @@ body {
 
 .legal-cgs a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     border: #0056b3;
     padding: 10px;
     border-radius: 5px;
-    background-color: #031c30;
+    background-color: #E0CEFF;
     transition: background-color 0.3s ease;
 }
 
@@ -273,7 +273,9 @@ tr:hover {
 }
 
 .tbc-form {
-    background: rgba(3, 28, 48, 0.70);
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #A982FF;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.9px);
@@ -282,15 +284,18 @@ tr:hover {
     padding: 60px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
     box-sizing: border-box;
     margin: 0 auto;
+    width: 1300px;
+    height: 650px;
+    margin-right: 50px;
+    margin-top: 30px;
 }
 
 .tbc-form h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #fff;
+    color: #000;
 }
 
 .input-group {
@@ -302,7 +307,7 @@ tr:hover {
     display: block;
     font-size: 16px;
     margin-bottom: 5px;
-    color: #fff;
+    color: #000;
 }
 
 .input-group input {
@@ -317,7 +322,7 @@ tr:hover {
     display: block;
     font-size: 16px;
     margin-bottom: 5px;
-    color: #fff;
+    color: #000;
 }
 
 .cate-group select[name="categorie"] {
@@ -335,13 +340,41 @@ tr:hover {
   .cate-group select[name="categorie"] option {
     padding: 10px;
     font-size: 16px;
-    background-color: #fff; 
+    background-color: #000; 
     color: #333;
   }
 
   .cate-group select[name="categorie"] option:hover {
     background-color: #f0f0f0; 
   }
+
+  .upload-img label{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #000;
+  }
+
+  .upload-img input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .grid-left-part{
+    margin-right: 80px;
+  }
+
+  .tbc-form textarea {
+    max-width: 1000px; 
+    max-height: 700px; 
+}
+
+.coucou:hover{
+    cursor:pointer;
+}
+  
 
 /* Fin Editeur Text */
   

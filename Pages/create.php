@@ -1,5 +1,5 @@
 <?php
-
+include 'navbar.php';
 include 'connect_base.php';
 if(isset($_POST["submit"])) {
   $target_dir = "../uploads/"; 
@@ -73,42 +73,43 @@ if(isset($_POST["submit"])) {
 
 </head>
 <body>
-  <form action="create.php" method="post">
-  <div class="tbc-form">
-      <h2>Créer votre blog</h2>
-      <div class="input-group">
-        <label for="titre">Titre de votre blog</label>
-        <input type="text" name='titre'>
-      </div>
-      <div class="input-group">
-        <label for="auteur">Votre nom</label>
-        <input type="text" name='auteur'>
-      </div>
-      <div class="cate-group">
-        <label for="">Catégorie</label>
-        <select name="categorie">
-          <option value="1">Sport</option>
-          <option value="2">Science</option>
-          <option value="3">Histoire</option>
-          <option value="4">Polotique</option>
-          <option value="5">People</option>
-          <option value="6">Insolite</option>
-        </select>
-      </div>
-      Sélectionnez une image à télécharger :
-      <input type="file" name="fileToUpload" id="fileToUpload">
-      <label>Courte description de la photo</label> 
-          
-      <input type="text" name="title">
-        
-      <textarea name="description"></textarea>
-        
-      <button type="submit">Poster</button>
-  </form>
+    <form action="create.php" method="post">
+       <div class="tbc-form">
+        <div class="grid-left-part">
+            <h2>Créer votre blog</h2>
+            <div class="input-group">
+              <label for="titre">Titre de votre blog</label>
+              <input type="text" name='titre'>
+            </div>
+            <div class="input-group">
+              <label for="auteur">Votre nom</label>
+              <input type="text" name='auteur'>
+            </div>
+            <div class="cate-group">
+              <label for="">Catégorie</label>
+              <select name="categorie">
+                <option value="1">Sport</option>
+                <option value="2">Science</option>
+                <option value="3">Histoire</option>
+                <option value="4">Polotique</option>
+                <option value="5">People</option>
+                <option value="6">Insolite</option>
+              </select>
+            </div>
+            <div class="upload-img">
+              <label for="">Sélectionnez une image à télécharger :</label>
+              <input type="file" name="fileToUpload" id="fileToUpload" class="coucou">
+              <label>Courte description de la photo</label>    
+              <input type="text" name="title">
+            </div>  
+          </div>
+          <div>
+              <textarea name="description"></textarea>
+          </div>    
+          <button type="submit">Poster</button>
+       </div>
+     </form>
  
-  
-    
-    
 
 </body>
 </html>
