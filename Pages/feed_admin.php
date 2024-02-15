@@ -27,18 +27,18 @@ include 'navbar.php';
         </tr>
 
         <?php
-        $sql = "SELECT * FROM article ;";
-        $temp = $pdo->query($sql);
-        echo '<tr><td>ID </td><td>Auteur</td><td>Catégorie</td><td>date de publication</td><td>titre</td><td>Description</td><td>titre photo</td><td>Action</td></tr>';
-        while ($resultat = $temp->fetch()) {
-            echo '<tr>' . '<td>' . $resultat['id_article'] . '</td>' .
-                '<td>' . $resultat['auteur'] . '</td>' .
-                '<td>' . $resultat['categorie'] . '</td>' .
-                '<td>' . $resultat['date_sortie'] . '</td>' .
-                '<td>' . $resultat['titre'] . '</td>' .
-                '<td>' . $resultat['description'] . '</td>' .
-                '<td>' . $resultat['title'] . '</td>' .
-                '<td><a classe="action-table" href="modif.php?id=' . $resultat['id_article'] . '"><i class="fas fa-edit fa-2x" style="color: #55dbcb"></i></a> <a classe="action-table" href="feed_admin.php?sup=' . $resultat['id_article'] . '"><i class="fas fa-trash-alt fa-2x" style="color: #55dbcb"></i></a></td>' . '</tr>';
+            $sql = "SELECT * FROM article ;";
+            $temp = $pdo->query($sql);
+            echo '<tr><td>ID </td><td>Auteur</td><td>Catégorie</td><td>date de publication</td><td>titre</td><td>Description</td><td>titre photo</td><td>Action</td></tr>';
+            while ($resultat = $temp ->fetch()){
+                echo '<tr>'.'<td>'.$resultat['id_article'].'</td>'
+                .'<td>'.$resultat['auteur'].'</td>'
+                .'<td>'.$resultat['id_categorie'].'</td>'
+                .'<td>'.$resultat['date_sortie'].'</td>'
+                .'<td>'.$resultat['titre'].'</td>'
+                .'<td>'.$resultat['description'].'</td>'
+                .'<td>'.$resultat['title'].'</td>'
+                .'<td><a classe="action-table" href="modif.php?id='.$resultat['id_article'].'"> Modifier </a><a  classe="action-table" href="feed_admin.php?sup='.$resultat['id_article'].'"> suppr </a></td>'.'</tr>';
             }
 
         if (isset($_REQUEST['sup'])) {

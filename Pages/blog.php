@@ -14,7 +14,17 @@
         </div>';
             
     }
-
+    $sqlshearch = 'SELECT * FROM article ORDER BY id DESC;';
+    $articles = $pdo->query($sqlshearch);
+    if (isset($_GET['recherche']) AND !empty($_GET['recherche'])){
+        $recherche = htmlspecialchars($_GET['recherche']);
+        $sqlarticle = 'SELECT titre FROM article WHERE titre LIKE "%'.$q.'%" ORDER BY id DESC;'; 
+        $articles = $pdo->query($sqlarticle);
+        if ($articles -> rowCount() == 0){
+            $sqlpost = 'SELECT titre FROM article WHERE CONCAT(titre, description) LIKE "%'.$recherche.'%" ORDER BY id DESC;' ;
+            $articles = $pdo->query($sqlpost); 
+        }
+    }
 ?>
 
 <!doctype html>
@@ -25,10 +35,11 @@
     <body>
         <div class='searchbar'>
             <a href="#"><img src="../img/icons/search.png" alt="" class='nav-img'></a>
-                <form action="">
-                    <input  class='searchbar-white' type="text" placeholder='Rechercher...'>
+                <form action="" method="get">
+                    <input  class='searchbar-white' type="text" placeholder='Rechercher...' name='recherche'>
                 </form>
-            <a href=""><img src="../img/icons/sort.png" alt="" class='icon'></a>
+                
+            <img src="../img/icons/sort.png" alt="" class='icon' class='nav-img'>
             
             <a href="#">
             <div class='bouton-filtre'>
