@@ -25,6 +25,12 @@
     <body>
         <div class='searchbar'>
             <img src="../img/icons/search.png" alt="">
+                <form action="">
+                    <input  class='searchbar-white' type="text" placeholder='Rechercher...'>
+                </form>
+            <img src="../img/icons/sort.png" alt="" class='icon'>
+            <a href="#" class='bouton-filtre'><img src="..\img\icons\Filter.png" alt="" class='filtre'><p>Filrter date</p></a>
+            <a href="#" class='bouton-filtre right-icon'><p>Filtrer A - Z</p><img src="..\img\icons\Filter.png" alt="" class='filtre'></a>
         </div>
 
         <div class='carte-blog'>

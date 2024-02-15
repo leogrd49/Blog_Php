@@ -113,6 +113,36 @@ a{
 |_.__/|_|\___/ \__, |
                |___/  */
 
+
+.searchbar{
+    padding-top: 20px;
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.searchbar img{
+    width: 80px;
+}
+.searchbar-white{
+    height: 50px;
+    width: 400px;
+    border: 2px solid #031C30;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.icon{
+    margin-left: 10px;
+}
+
+.filtre{
+    width: 10px;
+}
+
 .carte-blog{
     width: 1000px;
     margin: 0 auto;
