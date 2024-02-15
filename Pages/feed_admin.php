@@ -32,7 +32,7 @@ include  'navbar.php';
             while ($resultat = $temp ->fetch()){
                 echo '<tr>'.'<td>'.$resultat['id_article'].'</td>'
                 .'<td>'.$resultat['auteur'].'</td>'
-                .'<td>'.$resultat['categorie'].'</td>'
+                .'<td>'.$resultat['id_categorie'].'</td>'
                 .'<td>'.$resultat['date_sortie'].'</td>'
                 .'<td>'.$resultat['titre'].'</td>'
                 .'<td>'.$resultat['description'].'</td>'
