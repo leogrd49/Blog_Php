@@ -96,7 +96,6 @@
         <div class="fleches">
             <ul>
                 <a href="#" class='arrow'><img src="../img/icons/fleche" alt=""></a>
-                <a href="#" class='arrow'>1</a>
                 <a href="#" class='arrow'><img src="../img/icons/fleche2" alt=""></a>
             </ul>
         </div>

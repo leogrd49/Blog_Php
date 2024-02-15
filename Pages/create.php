@@ -73,6 +73,7 @@ if(isset($_POST["submit"])) {
 
 </head>
 <body>
+  <div class='paddingtop'>
   <form action="create.php" method="post" enctype='multipart/form-data'>
   <div class="tbc-form">
     <div class="tbc-container">
@@ -117,6 +118,7 @@ if(isset($_POST["submit"])) {
     </div>
   </div>  
   </form>
+  </div>
 </body>
 </html>
 
