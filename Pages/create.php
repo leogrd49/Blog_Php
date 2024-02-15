@@ -73,7 +73,7 @@ if(isset($_POST["submit"])) {
 
 </head>
 <body>
-  <form action="create.php" method="post">
+  <form action="create.php" method="post" enctype='multipart/form-data'>
   <div class="tbc-form">
       <h2>Créer votre blog</h2>
       <div class="input-group">
@@ -103,8 +103,10 @@ if(isset($_POST["submit"])) {
         
       <textarea name="description"></textarea>
         
-      <button type="submit">Poster</button>
+      <input type="submit" name='submit'>Poster</input>
+  </div>
   </form>
+  
  
   
     
