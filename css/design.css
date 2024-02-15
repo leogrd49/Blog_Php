@@ -568,59 +568,7 @@ tr:hover {
 /_/   \_\__,_|\__\___|\__,_|_|   
                                  */
 
-.carte-blog{
-    width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-    padding-top: 50px;
-}
-.carte-blog img{
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
-    margin: 0 auto;
-    transition: 0.5s;
-}
-.blog-img-container{
-    position: relative;
-    margin-bottom: 100px;
-}
-.white-card{
-    position: absolute;
-    bottom: -40px;
-    left: 85px;
-    width: 330px;
-    height: 100px;
-    background-color: white;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-.titre-blog{
-    margin-top: 6px;
-    margin-bottom: 8px;
-}
-.txt-blog{
-    margin: 5px 20px;
-    font-size: 12px;
-    text-align: justify;
-}
-.txt-blog-2{
-    margin: 0 20px;
-    font-size: 12px;
-    text-align: right;
-}
-.carte-blog a{
-    color: black;
-}
-.carte-blog img:hover{
-    transform: scale(1.05);
-}
-.white-card:hover{
-    transform: scale(1.1);
-}
+
 
 /* Fin Auteur */
 
