@@ -69,25 +69,34 @@ a{
 
 .connect {
     display: flex;
-    width: 185px;
-    height: 68px;
+    width: 100px;
+    height: 40px;
     padding: 5px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    margin-top: 2%;
+    margin-top: 3%;
     border-radius: 10px;
-    background: #031C30;
+    border: 3px solid #031C30;
 }
 
     .connect > p {
-        color: #FFF;
-        font-size: 20px;
+        color: #031C30;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
     }
+
+.connect:hover{
+    border: 3px solid #55DBCB;
+    background-color: #031C30;
+    transition: 0.5s;
+}
+
+.connect:hover > p{
+    color: white;
+    transition: 0.5s;
+}
 
 .cyan{
     color: #55DBCB;
