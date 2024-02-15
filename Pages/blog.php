@@ -71,11 +71,7 @@
 
         </div>
         
-<<<<<<< Updated upstream
-        <div>
-=======
         <div class="fleches">
->>>>>>> Stashed changes
             <ul>
                 <a href="#" class='arrow'><img src="../img/icons/fleche" alt=""></a>
                 <a href="#" class='arrow'>1</a>
