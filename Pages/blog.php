@@ -28,7 +28,7 @@
                 <form action="">
                     <input  class='searchbar-white' type="text" placeholder='Rechercher...'>
                 </form>
-            <img src="../img/icons/sort.png" alt="" class='icon' class='nav-img'>
+            <a href=""><img src="../img/icons/sort.png" alt="" class='icon'></a>
             
             <a href="#">
             <div class='bouton-filtre'>

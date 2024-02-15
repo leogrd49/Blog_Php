@@ -2,12 +2,7 @@ body {
     font-family: 'Poly', serif;
     background-color: #F3ECFF;
     margin: 0 auto;
-    background-size:100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    backdrop-filter: drop-shadow(4px 4px 10px blue);
     height:100%;
-    margin: 0;
     padding: 0;
 }
 
@@ -116,13 +111,14 @@ a{
 
 .searchbar{
     padding-top: 20px;
-    width: 940px;
+    width: 945px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
 .nav-img{
     width: 80px;
+    transition: 0.4s;
 }
 .searchbar-white{
     height: 50px;
@@ -137,6 +133,7 @@ a{
 
 .icon{
     margin-left: 10px;
+    transition: 0.4s;
 }
 .filtre-img{
     height: 25px;
@@ -157,6 +154,21 @@ a{
     margin-right: 12px;
     margin-left: 12px;
     margin-top: 10px;
+    transition: 0.3s;
+}
+.bouton-filtre:hover{
+    border: 1px solid #031C30;
+    color: #55DBCB;
+    margin-right: 11px;
+    background-color: #F3ECFF;
+}
+
+.icon:hover{
+    transform: rotate(90deg);
+}
+
+.nav-img:hover{
+    transform: scale(1.1);
 }
 
 .carte-blog{
@@ -173,6 +185,7 @@ a{
     height: 250px;
     border-radius: 20px;
     margin: 0 auto;
+    transition: 0.5s;
 }
 .blog-img-container{
     position: relative;
@@ -186,6 +199,7 @@ a{
     height: 100px;
     background-color: white;
     border-radius: 20px;
+    transition: 0.5s;
 }
 .titre-blog{
     margin-top: 6px;
@@ -205,11 +219,9 @@ a{
     color: black;
 }
 .carte-blog img:hover{
-    transition: 0.5s;
     transform: scale(1.05);
 }
 .white-card:hover{
-    transition: 0.5s;
     transform: scale(1.1);
 }
 .fleches{
