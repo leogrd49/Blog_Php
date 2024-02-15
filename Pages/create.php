@@ -75,36 +75,45 @@ if(isset($_POST["submit"])) {
 <body>
   <form action="create.php" method="post" enctype='multipart/form-data'>
   <div class="tbc-form">
-      <h2>Créer votre blog</h2>
-      <div class="input-group">
-        <label for="titre">Titre de votre blog</label>
-        <input type="text" name='titre'>
+    <div class="tbc-container">
+      <div class="grid-left-part">
+        <h2>Créer votre blog</h2>
+        <div class="input-group">
+          <label for="titre">Titre de votre blog</label>
+          <input type="text" name='titre'>
+        </div>
+        <div class="input-group">
+          <label for="auteur">Votre nom</label>
+          <input type="text" name='auteur'>
+        </div>
+        <div class="cate-group">
+          <label for="">Catégorie</label>
+          <select name="categorie">
+            <option value="1">Sport</option>
+            <option value="2">Science</option>
+            <option value="3">Histoire</option>
+            <option value="4">Politique</option>
+            <option value="5">People</option>
+            <option value="6">Insolite</option>
+          </select>
+        </div>
+      
+        <p>Sélectionnez une image à télécharger :</p>
+        <div class="input-group-v2">
+          <input type="file" name="fileToUpload" id="fileToUpload"></br>
+        </div>
+        </br>
+        <div class="input-group">
+          <label>Courte description de la photo</label> 
+          <input type="text" name="title" class="txt-chiant"></input>
+        </div>
+        <input type="submit" name='submit'>Poster</input>
+      </div>   
+      <div class="grid-right-part">   
+        <textarea name="description"></textarea>  
       </div>
-      <div class="input-group">
-        <label for="auteur">Votre nom</label>
-        <input type="text" name='auteur'>
-      </div>
-      <div class="cate-group">
-        <label for="">Catégorie</label>
-        <select name="categorie">
-          <option value="1">Sport</option>
-          <option value="2">Science</option>
-          <option value="3">Histoire</option>
-          <option value="4">Polotique</option>
-          <option value="5">People</option>
-          <option value="6">Insolite</option>
-        </select>
-      </div>
-      Sélectionnez une image à télécharger :
-      <input type="file" name="fileToUpload" id="fileToUpload">
-      <label>Courte description de la photo</label> 
-          
-      <input type="text" name="title">
-        
-      <textarea name="description"></textarea>
-        
-      <input type="submit" name='submit'>Poster</input>
-  </div>
+    </div>
+  </div>  
   </form>
   
  
