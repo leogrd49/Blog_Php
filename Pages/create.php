@@ -81,15 +81,15 @@ if(isset($_POST["submit"])) {
         <h2>Créer votre blog</h2>
         <div class="input-group">
           <label for="titre">Titre de votre blog</label>
-          <input type="text" name='titre'>
+          <input type="text" name='titre' required>
         </div>
         <div class="input-group">
           <label for="auteur">Votre nom</label>
-          <input type="text" name='auteur'>
+          <input type="text" name='auteur' required>
         </div>
         <div class="cate-group">
           <label for="">Catégorie</label>
-          <select name="categorie">
+          <select name="categorie" required>
             <option value="1">Sport</option>
             <option value="2">Science</option>
             <option value="3">Histoire</option>
@@ -101,7 +101,7 @@ if(isset($_POST["submit"])) {
       
         <p>Sélectionnez une image à télécharger :</p>
         <div class="input-group-v2">
-          <input type="file" name="fileToUpload" id="fileToUpload"></br>
+          <input type="file" name="fileToUpload" id="fileToUpload" required></br>
         </div>
         </br>
         <div class="input-group">
@@ -113,7 +113,7 @@ if(isset($_POST["submit"])) {
         </div>  
       </div>   
       <div class="grid-right-part">   
-        <textarea name="description"></textarea>  
+        <textarea name="description" required></textarea>  
       </div>
     </div>
   </div>  
