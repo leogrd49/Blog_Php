@@ -116,12 +116,12 @@ a{
 
 .searchbar{
     padding-top: 20px;
-    width: 900px;
+    width: 940px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
-.searchbar img{
+.nav-img{
     width: 80px;
 }
 .searchbar-white{
@@ -138,9 +138,25 @@ a{
 .icon{
     margin-left: 10px;
 }
-
-.filtre{
-    width: 10px;
+.filtre-img{
+    height: 25px;
+    padding-top: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bouton-filtre p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bouton-filtre{
+    background-color: white;
+    padding: 0 7px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 10px;
 }
 
 .carte-blog{
