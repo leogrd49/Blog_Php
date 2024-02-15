@@ -14,14 +14,15 @@
         </div>';
             
     }
-    $sqlshearch = 'SELECT * FROM article ORDER BY id DESC;';
+    $recherche = '';
+    $sqlshearch = 'SELECT * FROM article ORDER BY id_article DESC;';
     $articles = $pdo->query($sqlshearch);
     if (isset($_GET['recherche']) AND !empty($_GET['recherche'])){
         $recherche = htmlspecialchars($_GET['recherche']);
-        $sqlarticle = 'SELECT titre FROM article WHERE titre LIKE "%'.$q.'%" ORDER BY id DESC;'; 
+        $sqlarticle = 'SELECT * FROM article WHERE titre LIKE "%'.$recherche.'%" ORDER BY id_article DESC;'; 
         $articles = $pdo->query($sqlarticle);
         if ($articles -> rowCount() == 0){
-            $sqlpost = 'SELECT titre FROM article WHERE CONCAT(titre, description) LIKE "%'.$recherche.'%" ORDER BY id DESC;' ;
+            $sqlpost = 'SELECT * FROM article WHERE CONCAT(titre, description) LIKE "%'.$recherche.'%" ORDER BY id_article DESC;' ;
             $articles = $pdo->query($sqlpost); 
         }
     }
@@ -34,11 +35,11 @@
 </head>
     <body>
         <div class='searchbar'>
-            <a href="#"><img src="../img/icons/search.png" alt="" class='nav-img'></a>
+            <!-- <img src="../img/icons/search.png" alt="" class='nav-img'> -->
                 <form action="" method="get">
-                    <input  class='searchbar-white' type="text" placeholder='Rechercher...' name='recherche'>
+                    <input type="submit" value="Valider"></input>
+                    <input  class='searchbar-white'  placeholder='Rechercher...' name='recherche'>
                 </form>
-                
             <img src="../img/icons/sort.png" alt="" class='icon' class='nav-img'>
             
             <a href="#">
@@ -55,7 +56,7 @@
                 </div>
             </a>
         </div>
-
+        <?php if ($recherche == ''){?>
         <div class='carte-blog'>
             <?php
             $sql = 'SELECT * FROM article;';
@@ -64,7 +65,7 @@
                 blog($article);
             }
             ?>
-            
+        
             <div class="blog-img-container">
                 <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
                 <a href=""><div class="white-card">
@@ -101,9 +102,18 @@
                     <p class='txt-blog-2'> Auteur : Lorem ipsum</p></a>
                 </div>
             </div>
-
         </div>
-        
+        <?php } else { ?>
+            <div class='carte-blog'>
+            <?php if($articles ->rowCount() > 0) {?>
+                    <?php while ($recherche = $articles ->fetch()) {?>
+                        <?php blog($recherche);?>
+                        <?php }?>
+                    <?php }else { ?>
+                        Aucun résultat pour <?php echo $recherche ?>
+                        <?php } ?>
+            </div>
+        <?php }?>
         <div class="fleches">
             <ul>
                 <a href="#" class='arrow'><img src="../img/icons/fleche" alt=""></a>
