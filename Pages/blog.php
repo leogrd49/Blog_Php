@@ -37,7 +37,7 @@
         <div class='searchbar'>
             <!-- <img src="../img/icons/search.png" alt="" class='nav-img'> -->
                 <form action="" method="get">
-                    <input type="submit" value="Valider"></input>
+                    <input class='nav-img'type="submit" value="Valider"></input>
                     <input  class='searchbar-white'  placeholder='Rechercher...' name='recherche'>
                 </form>
             <img src="../img/icons/sort.png" alt="" class='icon' class='nav-img'>
