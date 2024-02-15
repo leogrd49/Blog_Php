@@ -389,10 +389,21 @@ tr:hover {
     border: 1px solid #ccc;
 }
 
-.input-group-v2 input {
+.input-group-v3 input {
     width: 100%;
     padding: 10px;
+    background-color: #E0CEFF;
     font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #E0CEFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group-v3 input:hover{
+    background-color: #55dbcb;
+    border-radius: 4px;
+    border: 1px solid #55dbcb;
 }
 
 .cate-group label{
@@ -447,7 +458,7 @@ tr:hover {
     margin-right: 100px;
 }
 
-.grid-left-part button{
+.button-poster{
     margin-top: 10px;
     width: 100%;
     padding: 10px;
@@ -460,14 +471,24 @@ tr:hover {
     transition: background-color 0.3s ease;
 }
 
-.grid-left-part button:hover{
+.button-poster:hover{
     background-color: #55dbcb;
 }
+
+.button-poster {
+    font-size: 0; /* Masque le texte interne du bouton */
+}
+
+.button-poster::after {
+    content: "Poster"; /* Remplace le contenu après le bouton */
+    font-size: 16px; /* Rétablit la taille de la police */
+}
+
+
 
 .grid-right-part{
     margin-left: 20px;
   }
-
 
 /* Fin Editeur Text */
   
