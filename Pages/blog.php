@@ -24,7 +24,25 @@
 </head>
     <body>
         <div class='searchbar'>
-            <img src="../img/icons/search.png" alt="">
+            <a href="#"><img src="../img/icons/search.png" alt="" class='nav-img'></a>
+                <form action="">
+                    <input  class='searchbar-white' type="text" placeholder='Rechercher...'>
+                </form>
+            <img src="../img/icons/sort.png" alt="" class='icon' class='nav-img'>
+            
+            <a href="#">
+            <div class='bouton-filtre'>
+                <img src="..\img\icons\Filter.png" alt="" class='filtre-img'>
+                <p>Filrter date</p>
+            </div>
+            </a>
+            
+            <a href="#">
+                <div class='bouton-filtre'>
+                <p>Filtrer A - Z</p>
+                <img src="..\img\icons\Filter.png" alt="" class='filtre-img'>
+                </div>
+            </a>
         </div>
 
         <div class='carte-blog'>
