@@ -1,5 +1,5 @@
 <?php
-    include 'navbar.php'
+    include 'navbar-connect.php'
 ?>
 <!doctype html>
 <html class="no-js" lang="fr"> 

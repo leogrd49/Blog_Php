@@ -1,6 +1,6 @@
 <?php
     include 'connect_base.php';
-    include 'navbar.php';
+    include 'navbar-connect.php';
     
     function blog($resultat){
         echo '
