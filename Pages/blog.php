@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="../css/design.css">
 </head>
     <body>
+        <div class='searchbar'>
+            <img src="../img/icons/search.png" alt="">
+        </div>
+
         <div class='carte-blog'>
             <?php
             $sql = 'SELECT * FROM article;';
