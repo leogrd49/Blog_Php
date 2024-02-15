@@ -16,7 +16,7 @@ body {
 .home-body {
     border: 0;
     margin: 0;
-    font-family: 'Poly', serif;
+    font-family: 'Asap', sans-serif;
 }
 
 .container {
@@ -78,9 +78,7 @@ body {
         font-weight: 500;
         line-height: normal;
     }
-.content h1:nth-last-child(1) {
-    color: #55DBCB;
-}
+
 /* Fin home */
 
 
@@ -96,7 +94,7 @@ body {
     padding-top: 50px;
 }
 .carte-blog img{
-    max-width: 400px;
+    width: 400px;
     border-radius: 20px;
     margin: 0 auto;
 }
@@ -275,8 +273,9 @@ tr:hover {
 }
 
 .tbc-form {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #A982FF;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -320,6 +319,12 @@ tr:hover {
     border: 1px solid #ccc;
 }
 
+.input-group-v2 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
 .cate-group label{
     display: block;
     font-size: 16px;
@@ -334,7 +339,7 @@ tr:hover {
     border-radius: 5px;
     appearance: none; 
     background-color: #f4f4f4;
-    color: #333;
+    color: #000;
     cursor: pointer;
   }
   
@@ -342,8 +347,8 @@ tr:hover {
   .cate-group select[name="categorie"] option {
     padding: 10px;
     font-size: 16px;
-    background-color: #000; 
-    color: #333;
+    background-color: #fff; 
+    color: #000;
   }
 
   .cate-group select[name="categorie"] option:hover {
@@ -364,19 +369,35 @@ tr:hover {
     cursor: pointer;
   }
 
-  .grid-left-part{
-    margin-right: 80px;
-  }
-
-  .tbc-form textarea {
-    max-width: 1000px; 
-    max-height: 700px; 
-}
-
 .coucou:hover{
     cursor:pointer;
 }
-  
+
+.grid-left-part button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #E0CEFF;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.grid-left-part button:hover{
+    background-color: #55dbcb;
+}
+
+.grid-right-part{
+    margin-left: 50px;
+  }
+
+  .grid-right-part textarea {
+    max-width: 1000px; 
+    max-height: 700px; 
+}
 
 /* Fin Editeur Text */
   
@@ -480,4 +501,3 @@ tr:hover {
 }
 
 /* Fin Navbar */
-
