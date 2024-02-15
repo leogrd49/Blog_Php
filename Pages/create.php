@@ -107,12 +107,13 @@ if(isset($_POST["submit"])) {
           <label>Courte description de la photo</label> 
           <input type="text" name="title" class="txt-chiant"></input>
         </div>
-        <button type="submit">Poster</button>
+        <input type="submit" name='submit'>Poster</input>
       </div>   
       <div class="grid-right-part">   
         <textarea name="description"></textarea>  
       </div>
-    </div>  
+    </div>
+  </div>  
   </form>
   
  
