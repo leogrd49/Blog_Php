@@ -39,8 +39,14 @@
                     <hr class='barre-auteur'/>
                 </div>
                 <div class='white-part'>
-                    <h3 class='auteur-type'>lifestyle author :</h3>
-                    <p> Ma bite sur un plateau d'argent Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia maiores impedit quidem qui accusamus repudiandae, iusto in ducimus id sint esse illum facere obcaecati voluptatem, vero mollitia perferendis veritatis numquam.</p>
+                    <h3 class='auteur-type'>Who is Alexandre Tsong-li :</h3>
+                    <p>Date de naissance : 18 juin Safevrié</p>
+                    <p>Lieu de naissance : Meurte et Moselle</p>
+                    <p>Style : LifeStyle Author</p>
+                    <p> Ses blogs les plus connus : </p>
+                    <img src="..\img\blog\food.jpg" alt="" class='pdp-blog'>
+                    <img src="..\img\blog\it.jpg" alt="" class='pdp-blog'>
+                    
                 </div>
             </div>
 
@@ -52,8 +58,52 @@
                     <hr class='barre-auteur'/>
                 </div>
                 <div class='white-part'>
-                    <h3 class='auteur-type'>lifestyle author :</h3>
-                    <p> Ma bite sur un plateau d'argent Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia maiores impedit quidem qui accusamus repudiandae, iusto in ducimus id sint esse illum facere obcaecati voluptatem, vero mollitia perferendis veritatis numquam.</p>
+                    <h3 class='auteur-type'>Who is Alexandre Tsong-li :</h3>
+                    <p>Date de naissance : 18 juin Safevrié</p>
+                    <p>Lieu de naissance : Meurte et Moselle</p>
+                    <p>Style : LifeStyle Author</p>
+                    <p> Ses blogs les plus connus : </p>
+                    <img src="..\img\blog\food.jpg" alt="" class='pdp-blog'>
+                    <img src="..\img\blog\it.jpg" alt="" class='pdp-blog'>
+                    
+                </div>
+            </div>
+
+            <div class='carte-auteur'>
+                <div class='cyan-part'>
+                    <h3 class='prenom-auteur'>Alexandre</h3>
+                    <h3 class='nom-auteur'>Tsong-li</h3>
+                    <img src="../img/auteurs/asiatpdp.jpg" alt="" class='img-auteur'>
+                    <hr class='barre-auteur'/>
+                </div>
+                <div class='white-part'>
+                    <h3 class='auteur-type'>Who is Alexandre Tsong-li :</h3>
+                    <p>Date de naissance : 18 juin Safevrié</p>
+                    <p>Lieu de naissance : Meurte et Moselle</p>
+                    <p>Style : LifeStyle Author</p>
+                    <p> Ses blogs les plus connus : </p>
+                    <img src="..\img\blog\food.jpg" alt="" class='pdp-blog'>
+                    <img src="..\img\blog\it.jpg" alt="" class='pdp-blog'>
+                    
+                </div>
+            </div>
+
+            <div class='carte-auteur'>
+                <div class='cyan-part'>
+                    <h3 class='prenom-auteur'>Alexandre</h3>
+                    <h3 class='nom-auteur'>Tsong-li</h3>
+                    <img src="../img/auteurs/asiatpdp.jpg" alt="" class='img-auteur'>
+                    <hr class='barre-auteur'/>
+                </div>
+                <div class='white-part'>
+                    <h3 class='auteur-type'>Who is Alexandre Tsong-li :</h3>
+                    <p>Date de naissance : 18 juin Safevrié</p>
+                    <p>Lieu de naissance : Meurte et Moselle</p>
+                    <p>Style : LifeStyle Author</p>
+                    <p> Ses blogs les plus connus : </p>
+                    <img src="..\img\blog\food.jpg" alt="" class='pdp-blog'>
+                    <img src="..\img\blog\it.jpg" alt="" class='pdp-blog'>
+                    
                 </div>
             </div>
 
