@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="../css/design.css">
 </head>
     <body>
+        <div class='searchbar'>
+            <img src="../img/icons/search.png" alt="">
+        </div>
+
         <div class='carte-blog'>
             <?php
             $sql = 'SELECT * FROM article;';
@@ -41,7 +45,6 @@
                     <p class="txt-blog-2"> Auteur : Lorem ipsum</p></a>
                 </div>
             </div>
-
             <div class='blog-img-container'>
                 <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
                 <a href=""><div class='white-card'>
@@ -51,7 +54,6 @@
                     <p class='txt-blog-2'> Auteur : Lorem ipsum</p></a>
                 </div>
             </div>
-
             <div class='blog-img-container'>
                 <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
                 <a href=""><div class='white-card'>
@@ -61,7 +63,6 @@
                     <p class='txt-blog-2'> Auteur : Lorem ipsum</p></a>
                 </div>
             </div>
-
             <div class='blog-img-container'>
                 <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
                 <a href=""><div class='white-card'>
@@ -74,11 +75,11 @@
 
         </div>
         
-        <div>
+        <div class="fleches">
             <ul>
-                <li><a href="#">01</a></li>
-                <li><a href="#">02</a></li>
-                <li><a href="#">03</a></li>
+                <a href="#" class='arrow'><img src="../img/icons/fleche" alt=""></a>
+                <a href="#" class='arrow'>1</a>
+                <a href="#" class='arrow'><img src="../img/icons/fleche2" alt=""></a>
             </ul>
         </div>
     </body>

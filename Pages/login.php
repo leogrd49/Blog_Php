@@ -12,11 +12,7 @@ include 'session.php';
 
 
 <?php
-if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'] )){
 
-    if ($_REQUEST['mail']==$login[0] and $_REQUEST['mdp'] == $login[1]);
-        echo 'gg';
-}
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +28,10 @@ if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'] )){
         $sql = 'SELECT * FROM utilisateur;';
         $temp = $pdo->query($sql);
         $login = $temp->fetch();
-    
+    if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'] )){
+
+    if ($_REQUEST['mail']==$login[0] and $_REQUEST['mdp'] == $login[1]);
+}
     ?>
 
 <div class="login-container">

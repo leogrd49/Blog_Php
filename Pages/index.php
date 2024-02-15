@@ -14,10 +14,10 @@
     </div>
 
     <div class="content">
-        <h1 class='home-h1'>Welcome to Style Post</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia in quo unde tempora placeat, 
-            similique id et illo, dicta consequuntur ut itaque maxime quam. Adipisci fugiat omnis beatae 
-            nemo ipsa?</p>
+        <h1 class='home-h1'>Welcome to Style<span class='cyan'>Post<span></h1>
+        <p> With StyePost you can create, edit and post your blogs, let your creativity take control and
+            write powerful and interesting articles ! Style Post is completely free to use so have fun.
+            <br /><br />Thank you ! </p>
         <a class="connect blog-a" href="blog.php">
             <p>Continuer</p>
         </a>

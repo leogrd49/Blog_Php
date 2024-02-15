@@ -73,7 +73,7 @@ if(isset($_POST["submit"])) {
 
 </head>
 <body>
-  <form action="create.php" method="post">
+  <form action="create.php" method="post" enctype='multipart/form-data'>
   <div class="tbc-form">
     <div class="tbc-container">
       <div class="grid-left-part">
@@ -111,8 +111,10 @@ if(isset($_POST["submit"])) {
       </div>   
       <div class="grid-right-part">   
         <textarea name="description"></textarea>  
-      </div>  
+      </div>
+    </div>  
   </form>
+  
  
   
     
