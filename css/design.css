@@ -575,30 +575,31 @@ tr:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    text-align: center;
     padding-top: 100px;
 }
 .carte-auteur{
     margin: 0 auto;
+    margin-bottom: 120px;
 }
 .cyan-part{
     width: 480px;
     height: 80px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    background-color: #32ffe7;
+    background-color: #031C30;
     position: relative;
 }
+
 .img-auteur{
-    width: 150px;
+    width: 140px;
     position: absolute;
     top: -75px;
-    left: 165px;
+    left: 170px;
     border: 5px solid #F3ECFF;
-    border-radius: 60px;
+    border-radius: 100%;
 }
 .prenom-auteur, .nom-auteur{
-    color: #000;
+    color: #ffffff;
     text-align: left;
     font-size: 20px;
     display: inline;
@@ -619,21 +620,42 @@ tr:hover {
     right: 20px;
     left: 20px;
     width: 440px;
-    color: #000;
-    background-color: #000;
+    color: #ffffff;
+    background-color: #ffffff;
     position: absolute;
     border: none;
 }
 .white-part{
     width: 480px;
-    height: 250px;
+    height: 320px;
     background-color: white;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 .auteur-type{
+    text-align: center;
     margin-top: 0;
     padding-top: 20px;
+}
+.white-part p{
+    margin: 2px 30px;
+    text-align: left;
+}
+
+.pdp-blog{
+    border: 3px solid #031C30; 
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-right: 15px;
+    transition: 0.5s;
+    width: 200px;
+    height: 125px
+}
+
+.pdp-blog:hover{
+    border: 3px solid #55DBCB;
+    transform: scale(0.95);
 }
 
 /* Fin Auteur */
