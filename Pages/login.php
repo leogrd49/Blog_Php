@@ -2,19 +2,24 @@
 include 'navbar.php';
 include 'connect_base.php';
 include 'session.php';
+$loginError = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $mdp = $_POST['mdp'];
+    if (isset($_REQUEST['mdp'], $_REQUEST['email'])){
+        $sql = $pdo->prepare("SELECT * FROM utilisateur WHERE email = ? ;");
+        $sql->execute([$email]);
+        $utilisateur = $sql->fetch(PDO::FETCH_ASSOC);
+        if ($utilisateur && $mdp == $utilisateur['mdp']) {
+            $_SESSION['id'] = $utilisateur['id_utilisateur'];
+            header('Location: ' . ($utilisateur['perm'] == 1 ? 'feed_admin.php' : 'feed.php'));
+            exit();
+        } else {
+            $loginError = 'Identifiants de connexion incorrects.';
+        }
+    }
+}
 ?>
-
-
-
-
-
-
-
-
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -24,32 +29,22 @@ include 'session.php';
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <?php
-        $sql = 'SELECT * FROM utilisateur;';
-        $temp = $pdo->query($sql);
-        $login = $temp->fetch();
-    if (isset($_REQUEST['mail'])and isset($_REQUEST['mdp'] )){
 
-    if ($_REQUEST['mail']==$login[0] and $_REQUEST['mdp'] == $login[1]);
-}
-    ?>
 
 <div class="login-container">
-    <form action="<?php if ($login['perm'] == 1){ echo 'feed_admin.php'; }else{ echo 'feed.php';}?>" method="post" class="login-form">
+    <form action="" method="post" class="login-form">
         <h2>Connexion</h2>
         <div class="input-group">
             <label for="mail">E-mail</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" required>
         </div>
         <div class="input-group">
             <label for="mdp">Mot de passe</label>
-            <input type="password" name="mdp" id="mdp">
+            <input type="password" name="mdp" id="mdp" required>
         </div>
+        <?php echo $loginError ;?>
         <button type="submit" class="btn-submit">Se connecter</button>
     </form>
-
-    
-
 </div>
 <footer>
     <div class="legal-cgs">
