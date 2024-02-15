@@ -12,7 +12,7 @@ include 'connect_base.php';
     <title>Document</title>
 </head>
 <body>
-    <form action="login.php" method='post'>
+    <form action="" method='post'>
         <label for="nom">Votre Nom</label>
         <input type="text" name="nom" required>
         <label for="prenom">Votre prenom</label>
@@ -30,7 +30,6 @@ include 'connect_base.php';
         
 
     </form>
-    
     <?php 
     if (isset($_REQUEST["nom"]) and isset($_REQUEST["prenom"]) and isset($_REQUEST["mail"]) and isset($_REQUEST["mdp"]) and isset($_REQUEST["style"]) and isset($_REQUEST["naissance"]) and isset($_REQUEST["date_naissance"])){
     $prenom = $_REQUEST["prenom"];
@@ -46,5 +45,6 @@ include 'connect_base.php';
                 $resultat2 = $pdo->exec($sql2);
                     }
         ?>
+    
 </body>
 </html>
