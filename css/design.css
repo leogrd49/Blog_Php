@@ -443,6 +443,10 @@ tr:hover {
     cursor:pointer;
 }
 
+.grid-left-part{
+    margin-right: 100px;
+}
+
 .grid-left-part button{
     margin-top: 10px;
     width: 100%;
@@ -461,13 +465,9 @@ tr:hover {
 }
 
 .grid-right-part{
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
-  .grid-right-part textarea {
-    max-width: 1000px; 
-    max-height: 700px; 
-}
 
 /* Fin Editeur Text */
   
