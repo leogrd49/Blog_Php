@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $utilisateur = $sql->fetch();
         if ($utilisateur && $mdp == $utilisateur['mdp']) {
             $_SESSION['id'] = $utilisateur['id_utilisateur'];
+            $_SESSION['log'] = 1;
             header('Location: ' . ($utilisateur['perm'] == 1 ? 'feed_admin.php' : 'feed.php'));
             exit();
         } else {

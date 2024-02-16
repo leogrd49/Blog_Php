@@ -1,5 +1,9 @@
 <?php
-include 'connect_base.php'
+include 'connect_base.php';
+include 'navbar-connect.php';
+include 'session.php';
+
+  
 ?>
 
 
@@ -15,13 +19,13 @@ include 'connect_base.php'
 <body>
     <table border="1">
         <?php
-            $sql = "SELECT * FROM article ;";
-            $temp = $pdo->query($sql);
+            $sql = $pdo->prepare("SELECT * FROM article WHERE auteur = ? ;");
+            $sql->execute([$_SESSION['id']]);
             echo '<tr><td>ID </td><td>Auteur</td><td>Catégorie</td><td>date de publication</td><td>titre</td><td>Description</td><td>titre photo</td><td>Action</td></tr>';
-            while ($resultat = $temp ->fetch()){
+            while ($resultat = $sql ->fetch()){
                 echo '<tr>'.'<td>'.$resultat['id_article'].'</td>'
                 .'<td>'.$resultat['auteur'].'</td>'
-                .'<td>'.$resultat['categorie'].'</td>'
+                .'<td>'.$resultat['id_categorie'].'</td>'
                 .'<td>'.$resultat['date_sortie'].'</td>'
                 .'<td>'.$resultat['titre'].'</td>'
                 .'<td>'.$resultat['description'].'</td>'

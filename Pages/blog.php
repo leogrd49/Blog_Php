@@ -1,6 +1,7 @@
 <?php
     include 'connect_base.php';
     include 'navbar-connect.php';
+    include 'session.php';
     
     function blog($resultat){
         echo '
@@ -9,7 +10,7 @@
             <a href=""><div class="white-card">
             <h3 class="titre-blog">'.$resultat['titre'].'</h3>
             '.$resultat['description'].'
-            <p class="txt-blog-2"> Auteur :'.$resultat['auteur'].'</p>
+            <p class="txt-blog-2"> Auteur :'.$resultat['nom'].''.$resultat['prenom'].'</p>
             </div>
         </div>';
             
@@ -59,7 +60,7 @@
         <?php if ($recherche == ''){?>
         <div class='carte-blog'>
             <?php
-            $sql = 'SELECT * FROM article;';
+            $sql = 'SELECT article.*,auteur.prenom,auteur.nom FROM article JOIN auteur ON article.auteur = auteur.id_utilisateur;';
             $temp = $pdo->query($sql);
             while ($article = $temp->fetch()){
                 blog($article);

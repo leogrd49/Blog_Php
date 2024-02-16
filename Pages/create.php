@@ -1,8 +1,12 @@
 <?php
 include 'navbar.php';
 include 'connect_base.php';
-include 'navbar.php';
+include'session.php';
 // Initialisation des variables vides
+if ($_SESSION['log'] != '1') {
+  header('"Location: login.php"');
+  exit();
+}
 $target_file = '';
 if(isset($_POST["submit"])) {
   $target_dir = "../uploads/"; 

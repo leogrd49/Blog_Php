@@ -1,6 +1,7 @@
 <?php 
 include 'connect_base.php';
-
+include 'navbar-connect.php';
+include 'session.php';
 ?>
 
 
@@ -39,7 +40,8 @@ include 'connect_base.php';
     $style = $_REQUEST["style"];
     $lieu_naissance = $_REQUEST["naissance"];
     $date = $_REQUEST["date_naissance"];
-                $sql = "INSERT INTO auteur (nom,prenom,mail,mdp,date_naissance,style_ecriture,lieu_naissance) VALUES('$nom','$prenom','$mail','$mdp','$date','$style','$lieu_naissance'); ";
+    $id_utilisateur = $_SESSION['id'];
+                $sql = "INSERT INTO auteur (nom,prenom,mail,mdp,date_naissance,style_ecriture,lieu_naissance,id_utilisateur) VALUES('$nom','$prenom','$mail','$mdp','$date','$style','$lieu_naissance','$id_utilisateur'); ";
                 $resultat = $pdo->exec($sql);
                 $sql2 = "INSERT INTO utilisateur (mdp,email) VALUES('$mdp','$mail'); ";
                 $resultat2 = $pdo->exec($sql2);
