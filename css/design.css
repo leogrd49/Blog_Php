@@ -1076,3 +1076,26 @@ tr:hover {
 }
 
 /* Fin Navbar */
+
+/* deco */
+
+.bouton-container{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 300px;
+}
+.bouton-deco{
+    background-color: #031c3065;
+    border: 2px solid #031C30;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #55DBCB;
+    transition: 0.3s;
+}
+.bouton-deco:hover{
+    background-color: #55DBCB;
+    border: 2px solid #031C30;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+}

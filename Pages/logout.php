@@ -7,12 +7,15 @@ include 'session.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/design.css">
+    <title>Logout</title>
 </head>
 <body>
+    <div class='bouton-container'>
     <form action="login.php">
-        <input type="submit" name="submit" value='deconnexion'>
+        <input type="submit" class='bouton-deco' name="submit" value='deconnexion'>
         <?php $_SESSION['log'] = 0?>
     </form>
+    </div>
 </body>
 </html>
