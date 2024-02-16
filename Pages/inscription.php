@@ -34,7 +34,7 @@ if ($_SESSION['log'] == 1){
         </div>
         <div class="input-group">
             <label for="mdp">Votre mot de passe</label>
-            <input type="text" name="mdp" required>
+            <input type="password" name="mdp" required>
         </div>
         <div class="input-group">
             <label for="style">Votre style d'écriture</label>
