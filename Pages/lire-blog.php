@@ -13,7 +13,8 @@
         $sql = 'SELECT article.*, auteur.prenom, auteur.nom AS autnom, categorie.nom AS catnom
         FROM article
         JOIN auteur ON article.auteur = auteur.id_auteur
-        JOIN categorie ON article.id_categorie = categorie.id_categorie;';
+        JOIN categorie ON article.id_categorie = categorie.id_categorie
+        WHERE '.$_REQUEST['id'].' = article.id_article;';
         $temp = $pdo->query($sql);
         $article = $temp->fetch();
         ?>
