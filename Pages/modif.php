@@ -5,6 +5,11 @@
         header('"Location: login.php"');
         exit();
       }
+      if ($_SESSION['log'] == 1){
+        include 'navbar.php';
+    } else{
+        include 'navbar-connect.php';
+    }
 ?>
 
     

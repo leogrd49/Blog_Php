@@ -1,7 +1,11 @@
 <?php
 include 'connect_base.php';
-include 'navbar.php';
 include 'session.php';
+if ($_SESSION['log'] == 1){
+    include 'navbar.php';
+} else{
+    include 'navbar-connect.php';
+}
 if ($_SESSION['log'] != '1') {
     header('"Location: login.php"');
     exit();
