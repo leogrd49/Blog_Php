@@ -117,11 +117,17 @@ a{
     display: flex;
     flex-direction: row;
 }
+
 .nav-img{
+    font-size: 0;
     width: 80px;
+    height: 80px;
     transition: 0.4s;
     background-image: url(../img/icons/search.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .blog-img-container p{
 display: none !important;
 }
@@ -174,6 +180,12 @@ display: none !important;
 
 .nav-img:hover{
     transform: scale(1.1);
+}
+.bouton-recherche{
+    padding-top: -10px;
+    border: none;
+    background-color: transparent;
+    
 }
 
 /* fin searchbar */
