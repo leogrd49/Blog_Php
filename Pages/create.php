@@ -88,7 +88,7 @@ if(isset($_POST["submit"])) {
           <input type="text" name='titre' required>
         </div>
         <div class="input-group">
-          <label for="auteur">Votre nom</label>
+          <label for="auteur" class='black'>Votre nom</label>
           <input type="text" name='auteur' required>
         </div>
         <div class="cate-group">
@@ -113,7 +113,7 @@ if(isset($_POST["submit"])) {
           <input type="text" name="title" class="txt-chiant"></input>
         </div>
         <div class="input-group">
-          <label>Courte description du blog</label> 
+          <label class='black'>Courte description du blog</label> 
           <input type="text" name="desblog" class="txt-chiant"></input>
         </div>
         <div class="input-group-v3">

@@ -122,6 +122,9 @@ a{
     transition: 0.4s;
     background-image: url(../img/icons/search.png);
 }
+.blog-img-container p{
+display: none !important;
+}
 .searchbar-white{
     height: 50px;
     width: 400px;
@@ -574,6 +577,9 @@ tr:hover {
 }
 .black{
     color: #000 !important;
+}
+.grid-left-part h2{
+    margin-bottom: 10px;
 }
 
 /* Fin Editeur Text */
