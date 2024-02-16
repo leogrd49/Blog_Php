@@ -187,6 +187,9 @@ display: none !important;
     background-color: transparent;
     
 }
+.searchbar a{
+    color: #000;
+}
 
 /* fin searchbar */
 
@@ -892,7 +895,7 @@ tr:hover {
 .icons-container-navbar{
     display: flex;
     flex-direction: column;
-    margin-bottom: 190px;
+    margin-bottom: 235px;
     margin-left: 8px;
 }
 .row{

@@ -24,7 +24,6 @@
         <a href="blog.php" class="anim1"><div class="row"><img src="../img/icons/blog.png" alt="icons pour aller à la page de navigation"><p class="hidden">Blog</p></div></a>
         <a href="create.php" class="anim1"><div class="row"><img src="../img/icons/create.png" alt="icons pour aller à la page de creation"><p class="hidden">Create</p></div></a>
         <a href="auteur.php" class="anim1"><div class="row"><img src="../img/icons/profile.png" alt="icons pour aller à la page auteur"><p class="hidden">Authors</p></div></a>
-        <a href="setting.php" class="anim1"><div class="row"><img src="../img/icons/setting.png" alt="icons pour aller à la page settings"><p class="hidden">Settings</p></div></a>
         </div>
         <div class="login-container-navbar">
         <a href="logout.php" class="anim2"><div class="row"><img src="../img/icons/logout.png" alt="se logout"><p class="hidden">Logout</p></div></a>
