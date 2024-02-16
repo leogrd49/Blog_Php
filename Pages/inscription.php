@@ -49,7 +49,7 @@ if ($_SESSION['log'] == 1){
         </div>
         <div class="text-center">
             <h3>Vous avez déjà un compte ?</h3>
-            <a href="inscription.php">Connectez vous !</a>
+            <a href="login.php">Connectez vous !</a>
         </div>
         <button type="submit" class="btn-submit">Créer un compte</button>
         </form>
