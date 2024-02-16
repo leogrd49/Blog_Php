@@ -47,7 +47,7 @@ include 'session.php';
             <h3>Vous avez déjà un compte ?</h3>
             <a href="inscription.php">Connectez vous !</a>
         </div>
-        <button type="submit" class="btn-submit">Se connecter</button>
+        <button type="submit" class="btn-submit">Créer un compte</button>
         </form>
     </div>
     <?php 

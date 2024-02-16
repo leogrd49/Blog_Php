@@ -84,15 +84,15 @@ if(isset($_POST["submit"])) {
       <div class="grid-left-part">
         <h2>Créer votre blog</h2>
         <div class="input-group">
-          <label for="titre">Titre de votre blog</label>
+          <label for="titre" class='black'>Titre de votre blog</label>
           <input type="text" name='titre' required>
         </div>
         <div class="input-group">
-          <label for="auteur">Votre nom</label>
+          <label for="auteur" class='black'>Votre nom</label>
           <input type="text" name='auteur' required>
         </div>
         <div class="cate-group">
-          <label for="">Catégorie</label>
+          <label for="" class='black'>Catégorie</label>
           <select name="categorie" required>
             <option value="1">Sport</option>
             <option value="2">Science</option>
@@ -109,7 +109,7 @@ if(isset($_POST["submit"])) {
         </div>
         </br>
         <div class="input-group">
-          <label>Courte description de la photo</label> 
+          <label class='black'>Courte description de la photo</label> 
           <input type="text" name="title" class="txt-chiant"></input>
         </div>
         <div class="input-group-v3">

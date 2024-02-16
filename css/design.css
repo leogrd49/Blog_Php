@@ -571,7 +571,10 @@ tr:hover {
 
 .grid-right-part{
     margin-left: 20px;
-  }
+}
+.black{
+    color: #000 !important;
+}
 
 /* Fin Editeur Text */
   
@@ -673,6 +676,13 @@ tr:hover {
 .pdp-blog:hover{
     border: 3px solid #55DBCB;
     transform: scale(0.95);
+}
+.lien-page-auteur{
+    color: black;
+    transition: 0.5s;
+}
+.lien-page-auteur:hover{
+    transform: scale(1.05);
 }
 
 /* Fin Auteur */
@@ -792,7 +802,6 @@ tr:hover {
 }
 .lire-blog-paper{
     width: 945px;
-    height: 100vh;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.36);
     border: 1px solid #031C30;
@@ -802,7 +811,34 @@ tr:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
+.lire-blog-paper img{
+    float: left;
+    margin: 40px;
+    width: 450px;
+    height: 250px;
+    border: 1px solid #031C30;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+.lire-blog-paper h4{
+    margin: 0;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.lire-blog-paper p{
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.text-lire-blog{
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+}
 
 /* FIN LIRE BLOG */
 
