@@ -7,6 +7,7 @@
         echo '  <a href="lire-auteur.php" class="lien-page-auteur">
                 <div class="carte-auteur">
                     <div class="cyan-part">
+                    
                         <h3 class="prenom-auteur">'.$resultat['prenom'].'</h3>
                         <h3 class="nom-auteur">'.$resultat['nom'].'</h3>
                         <img src="../img/auteurs/asiatpdp.jpg" alt="" class="img-auteur">
@@ -20,9 +21,10 @@
                         <p> Ses blogs les plus connus : </p>
                         <img src="..\img\blog\food.jpg" alt="" class="pdp-blog">
                         <img src="..\img\blog\it.jpg" alt="" class="pdp-blog">
+                    </a>
                     </div>
                 </div>
-                </a>';
+                ';
     }
     
 ?>
@@ -33,7 +35,7 @@
 </head>
     <body>
 
-        <div class='carte-presentation-auteur-container'>
+        <div class='carte-auteur-container'>
             
             <?php 
             $sql = 'SELECT * FROM auteur';
@@ -45,5 +47,11 @@
 
         </div>
         
+        <div class="fleches">
+            <ul>
+                <a href="#" class='arrow'><img src="../img/icons/fleche" alt=""></a>
+                <a href="#" class='arrow'><img src="../img/icons/fleche2" alt=""></a>
+            </ul>
+        </div>
     </body>
 </html>
