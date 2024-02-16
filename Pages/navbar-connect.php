@@ -27,7 +27,7 @@
         <a href="setting.php" class="anim1"><div class="row"><img src="../img/icons/setting.png" alt="icons pour aller à la page settings"><p class="hidden">Settings</p></div></a>
         </div>
         <div class="login-container-navbar">
-        <a href="login.php" class="anim2"><div class="row"><img src="../img/icons/log-in.svg" alt="se login"><p class="hidden">Log in</p></div></a>
+        <a href="login.php" class="anim2"><div class="row"><img src="../img/icons/log-in.png" alt="se login"><p class="hidden">Login</p></div></a>
         </div>
     </div>
 

@@ -6,8 +6,8 @@
     function blog($resultat){
         echo '
         <div class="blog-img-container">
-            <a href="#"><img src="'.$resultat['lien_image'].'" alt="'.$resultat['title'].'"></a>
-            <a href=""><div class="white-card">
+            <a href="lire-blog.php"><img src="'.$resultat['lien_image'].'" alt="'.$resultat['title'].'"></a>
+            <a href="lire-blog.php"><div class="white-card">
             <h3 class="titre-blog">'.$resultat['titre'].'</h3>
             '.$resultat['description'].'
             <p class="txt-blog-2"> Auteur :'.$resultat['nom'].''.$resultat['prenom'].'</p>
@@ -57,6 +57,7 @@
                 </div>
             </a>
         </div>
+        
         <?php if ($recherche == ''){?>
         <div class='carte-blog'>
             <?php
@@ -66,43 +67,7 @@
                 blog($article);
             }
             ?>
-        
-            <div class="blog-img-container">
-                <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
-                <a href=""><div class="white-card">
-                    <h3 class="titre-blog">Titre de l'article</h3>
-                    <p class="txt-blog"> Description : dolor sit amet consectetur adipisicing elit. 
-                        Cupiditate architecto perferendis, consectetur harum nesciunt quod excepturi ?
-                    <p class="txt-blog-2"> Auteur : Lorem ipsum</p></a>
-                </div>
-            </div>
-            <div class='blog-img-container'>
-                <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
-                <a href=""><div class='white-card'>
-                    <h3 class='titre-blog'>Titre de l'article</h3>
-                    <p class='txt-blog'> Description : dolor sit amet consectetur adipisicing elit. 
-                        Cupiditate architecto perferendis, consectetur harum nesciunt quod excepturi ?
-                    <p class='txt-blog-2'> Auteur : Lorem ipsum</p></a>
-                </div>
-            </div>
-            <div class='blog-img-container'>
-                <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
-                <a href=""><div class='white-card'>
-                    <h3 class='titre-blog'>Titre de l'article</h3>
-                    <p class='txt-blog'> Description : dolor sit amet consectetur adipisicing elit. 
-                        Cupiditate architecto perferendis, consectetur harum nesciunt quod excepturi ?
-                    <p class='txt-blog-2'> Auteur : Lorem ipsum</p></a>
-                </div>
-            </div>
-            <div class='blog-img-container'>
-                <a href="#"><img src="../img/blog/img3.jpg" alt=""></a>
-                <a href=""><div class='white-card'>
-                    <h3 class='titre-blog'>Titre de l'article</h3>
-                    <p class='txt-blog'> Description : dolor sit amet consectetur adipisicing elit. 
-                        Cupiditate architecto perferendis, consectetur harum nesciunt quod excepturi ?
-                    <p class='txt-blog-2'> Auteur : Lorem ipsum</p></a>
-                </div>
-            </div>
+
         </div>
         <?php } else { ?>
             <div class='carte-blog'>
