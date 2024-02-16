@@ -1,7 +1,12 @@
 <?php
-include 'navbar.php';
 include 'connect_base.php';
+
 include'session.php';
+if ($_SESSION['log'] == 1){
+  include 'navbar.php';
+} else{
+  include 'navbar-connect.php';
+}
 // Initialisation des variables vides
 
 $target_file = '';
@@ -60,8 +65,8 @@ if(isset($_POST["submit"])) {
     $desblog = addslashes($_REQUEST['desblog']);
     echo $desblog;
     $date = date('Y/m/d');
-    $sql = 'INSERT INTO article (auteur,id_categorie,titre,date_sortie,description,lien_image,title,desblog) 
-    VALUES("'.$auteur.'","'.$categorie.'","'.$titre.'","'.$date.'","'.$description.'","'.$target_file.'","'.$title.'","'.$desblog.'") ;';
+    $sql = 'INSERT INTO article (auteur,id_categorie,date_sortie,titre,description,lien_image,title,desblog) 
+    VALUES("'.$auteur.'","'.$categorie.'","'.$date.'","'.$titre.'","'.$description.'","'.$target_file.'","'.$title.'","'.$desblog.'") ;';
     $temp = $pdo->exec($sql);
   }
 

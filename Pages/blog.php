@@ -1,7 +1,14 @@
 <?php
-    include 'connect_base.php';
-    include 'navbar-connect.php';
     include 'session.php';
+    include 'connect_base.php';
+    if ($_SESSION['log'] == 1){
+        include 'navbar.php';
+    } else{
+        include 'navbar-connect.php';
+    }
+
+    
+    
     include 'searchbar.php';
     
     function blog($resultat){

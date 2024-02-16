@@ -1,5 +1,7 @@
 <?php
-include 'navbar-connect.php';
+
+    include 'navbar-connect.php';
+
 include 'connect_base.php';
 include 'session.php';
 $loginError = '';
