@@ -51,15 +51,17 @@ if(isset($_POST["submit"])) {
       }
   }
 }
-  if (isset($_REQUEST['categorie'])and isset($_REQUEST['titre'])and isset($_REQUEST['description']) and isset($_REQUEST['title'])){
+  if (isset($_REQUEST['categorie'])and isset($_REQUEST['titre'])and isset($_REQUEST['description']) and isset($_REQUEST['title']) and isset($_REQUEST['desblog'])){
     $auteur = $_SESSION['id'];
     $categorie = $_REQUEST['categorie'];
-    $titre = $_REQUEST['titre'];
-    $description = $_REQUEST['description'];
-    $title = $_REQUEST['title'];
-    $desblog = $_REQUEST['$desblog'];
+    $titre = addslashes($_REQUEST['titre']);
+    $description = addslashes($_REQUEST['description']);
+    $title = addslashes($_REQUEST['title']);
+    $desblog = addslashes($_REQUEST['desblog']);
+    echo $desblog;
     $date = date('Y/m/d');
-    $sql = "INSERT INTO article (auteur,id_categorie,titre,date_sortie,description,lien_image,title,desblog) VALUES('$auteur','$categorie','$titre','$date','$description','$target_file','$title','$desblog') ;";
+    $sql = 'INSERT INTO article (auteur,id_categorie,titre,date_sortie,description,lien_image,title,desblog) 
+    VALUES("'.$auteur.'","'.$categorie.'","'.$titre.'","'.$date.'","'.$description.'","'.$target_file.'","'.$title.'","'.$desblog.'") ;';
     $temp = $pdo->exec($sql);
   }
 

@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $mdp = $_POST['mdp'];
     if (isset($_REQUEST['mdp'], $_REQUEST['email'])){
-        $sql = $pdo->prepare("SELECT * FROM auteur WHERE email = ? ;");
+        $sql = $pdo->prepare("SELECT * FROM auteur WHERE mail = ? ;");
         $sql->execute([$email]);
         $utilisateur = $sql->fetch();
         if ($utilisateur && $mdp == $utilisateur['mdp']) {
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <form action="" method="post" class="login-form">
         <h2>Connexion</h2>
         <div class="input-group">
-            <label for="mail">E-mail</label>
+            <label for="email">E-mail</label>
             <input type="text" name="email" id="email" required>
         </div>
         <div class="input-group">
