@@ -20,10 +20,10 @@
     $articles = $pdo->query($sqlshearch);
     if (isset($_GET['recherche']) AND !empty($_GET['recherche'])){
         $recherche = htmlspecialchars($_GET['recherche']);
-        $sqlarticle = 'SELECT * FROM article WHERE titre LIKE "%'.$recherche.'%" ORDER BY id_article DESC;'; 
+        $sqlarticle = 'SELECT article.*,auteur.prenom,auteur.nom FROM article JOIN auteur ON article.auteur = auteur.id_auteur WHERE titre LIKE "%'.$recherche.'%" ORDER BY id_article DESC;'; 
         $articles = $pdo->query($sqlarticle);
         if ($articles -> rowCount() == 0){
-            $sqlpost = 'SELECT * FROM article WHERE CONCAT(titre, description) LIKE "%'.$recherche.'%" ORDER BY id_article DESC;' ;
+            $sqlpost = 'SELECT article.*,auteur.prenom,auteur.nom FROM article JOIN auteur ON article.auteur = auteur.id_auteur WHERE CONCAT(titre, description) LIKE "%'.$recherche.'%" ORDER BY id_article DESC;' ;
             $articles = $pdo->query($sqlpost); 
         }
     }
@@ -60,7 +60,7 @@
         <?php if ($recherche == ''){?>
         <div class='carte-blog'>
             <?php
-            $sql = 'SELECT article.*,auteur.prenom,auteur.nom FROM article JOIN auteur ON article.auteur = auteur.id_utilisateur;';
+            $sql = 'SELECT article.*,auteur.prenom,auteur.nom FROM article JOIN auteur ON article.auteur = auteur.id_auteur;';
             $temp = $pdo->query($sql);
             while ($article = $temp->fetch()){
                 blog($article);

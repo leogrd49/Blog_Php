@@ -3,10 +3,7 @@ include 'navbar.php';
 include 'connect_base.php';
 include'session.php';
 // Initialisation des variables vides
-if ($_SESSION['log'] != '1') {
-  header('"Location: login.php"');
-  exit();
-}
+
 $target_file = '';
 if(isset($_POST["submit"])) {
   $target_dir = "../uploads/"; 
@@ -54,14 +51,15 @@ if(isset($_POST["submit"])) {
       }
   }
 }
-  if (isset($_REQUEST['categorie'])and isset($_REQUEST['titre'])and isset($_REQUEST['auteur'])and isset($_REQUEST['description']) and isset($_REQUEST['title'])){
-    $auteur = $_REQUEST['auteur'];
+  if (isset($_REQUEST['categorie'])and isset($_REQUEST['titre'])and isset($_REQUEST['description']) and isset($_REQUEST['title'])){
+    $auteur = $_SESSION['id'];
     $categorie = $_REQUEST['categorie'];
     $titre = $_REQUEST['titre'];
     $description = $_REQUEST['description'];
     $title = $_REQUEST['title'];
+    $desblog = $_REQUEST['$desblog'];
     $date = date('Y/m/d');
-    $sql = "INSERT INTO article (auteur,id_categorie,titre,date_sortie,description,lien_image,title) VALUES('$auteur','$categorie','$titre','$date','$description','$target_file','$title') ;";
+    $sql = "INSERT INTO article (auteur,id_categorie,titre,date_sortie,description,lien_image,title,desblog) VALUES('$auteur','$categorie','$titre','$date','$description','$target_file','$title','$desblog') ;";
     $temp = $pdo->exec($sql);
   }
 
@@ -87,12 +85,8 @@ if(isset($_POST["submit"])) {
           <label for="titre">Titre de votre blog</label>
           <input type="text" name='titre' required>
         </div>
-        <div class="input-group">
-          <label for="auteur">Votre nom</label>
-          <input type="text" name='auteur' required>
-        </div>
         <div class="cate-group">
-          <label for="">Catégorie</label>
+          <label for="categorie">Catégorie</label>
           <select name="categorie" required>
             <option value="1">Sport</option>
             <option value="2">Science</option>
@@ -111,6 +105,10 @@ if(isset($_POST["submit"])) {
         <div class="input-group">
           <label>Courte description de la photo</label> 
           <input type="text" name="title" class="txt-chiant"></input>
+        </div>
+        <div class="input-group">
+          <label>Courte description du blog</label> 
+          <input type="text" name="desblog" class="txt-chiant"></input>
         </div>
         <div class="input-group-v3">
           <input type="submit" name='submit'></input>

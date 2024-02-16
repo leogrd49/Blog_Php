@@ -8,4 +8,9 @@
         // defini le mode par defaut
         $_SESSION["log"] = 0;
     }
+
+    echo "SESSION[log]".$_SESSION["log"]."<br/>";
+    echo "SESSION[id]".$_SESSION["id"]."<br/>";
+
+
 ?>

@@ -1,6 +1,5 @@
 <?php
     include 'connect_base.php';
-    include 'navbar-connect.php';
     include 'session.php';
     if ($_SESSION['log'] != '1') {
         header('"Location: login.php"');
@@ -42,10 +41,14 @@
     <?php
         echo '<input type="text" name="auteur" value='.$resultat['auteur'].'>';
     ?>
-    <label for="categorie">categorie</label>
-    <?php
-        echo '<input type="text" name="categorie" value='.$resultat['categorie'].'>';
-    ?>
+    <select name="categorie">categorie
+            <option value="1">Sport</option>
+            <option value="2">Science</option>
+            <option value="3">Histoire</option>
+            <option value="4">Politique</option>
+            <option value="5">People</option>
+            <option value="6">Insolite</option>
+        </select>
     <label for="titre">titre</label>
     <?php
         echo '<input type="text" name="titre" value='.$resultat['titre'].'>';
