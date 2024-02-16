@@ -2,6 +2,7 @@
     include 'connect_base.php';
     include 'navbar-connect.php';
     include 'session.php';
+    include 'searchbar.php';
     
     function blog($resultat){
         echo '
@@ -35,28 +36,6 @@
     <link rel="stylesheet" href="../css/design.css">
 </head>
     <body>
-        <div class='searchbar'>
-            <!-- <img src="../img/icons/search.png" alt="" class='nav-img'> -->
-                <form action="" method="get">
-                    <input class='nav-img'type="submit" value="Valider"></input>
-                    <input  class='searchbar-white'  placeholder='Rechercher...' name='recherche'>
-                </form>
-            <img src="../img/icons/sort.png" alt="" class='icon' class='nav-img'>
-            
-            <a href="#">
-            <div class='bouton-filtre'>
-                <img src="..\img\icons\Filter.png" alt="" class='filtre-img'>
-                <p>Filrter date</p>
-            </div>
-            </a>
-            
-            <a href="#">
-                <div class='bouton-filtre'>
-                <p>Filtrer A - Z</p>
-                <img src="..\img\icons\Filter.png" alt="" class='filtre-img'>
-                </div>
-            </a>
-        </div>
         
         <?php if ($recherche == ''){?>
         <div class='carte-blog'>
