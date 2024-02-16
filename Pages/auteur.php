@@ -5,7 +5,7 @@
     include 'searchbar.php';
     function auteur($resultat){
         echo '  <a href="lire-auteur.php" class="lien-page-auteur">
-                <div class="carte-auteur">
+                <div class="carte-presentation-auteur-container">
                     <div class="cyan-part">
                         <h3 class="prenom-auteur">'.$resultat['prenom'].'</h3>
                         <h3 class="nom-auteur">'.$resultat['nom'].'</h3>

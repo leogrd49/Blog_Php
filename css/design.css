@@ -603,7 +603,7 @@ tr:hover {
     width: 800px;
 }
 
-/*   _         _                  
+/* blog   _         _                  
    / \  _   _| |_ ___ _   _ _ __ 
   / _ \| | | | __/ _ \ | | | '__|
  / ___ \ |_| | ||  __/ |_| | |   
@@ -613,7 +613,7 @@ tr:hover {
 .carte-presentation-auteur-container {
     width: 80%;
     margin: 0 auto;
-    padding-top:80px;
+    padding-top: 100px;
     padding-right: 270px;
 }
 
