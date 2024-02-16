@@ -7,6 +7,11 @@ if ($_SESSION['log'] == 1){
 } else{
   include 'navbar-connect.php';
 }
+if ($_SESSION['log'] = 1){
+            header('Location: login.php');
+            exit();
+        } else {
+
 // Initialisation des variables vides
 
 $target_file = '';
@@ -140,3 +145,5 @@ if(isset($_POST["submit"])) {
 <script>
   new FroalaEditor('textarea');
 </script>
+
+<?php } ?>
