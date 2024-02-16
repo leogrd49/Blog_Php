@@ -111,7 +111,7 @@ if(isset($_POST["submit"])) {
           <input type="text" name="title" class="txt-chiant"></input>
         </div>
         <div class="input-group">
-          <label>Courte description du blog</label> 
+          <label class='black'>Courte description du blog</label> 
           <input type="text" name="desblog" class="txt-chiant"></input>
         </div>
         <div class="input-group-v3">

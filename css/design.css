@@ -578,6 +578,9 @@ tr:hover {
 .black{
     color: #000 !important;
 }
+.grid-left-part h2{
+    margin-bottom: 10px;
+}
 
 /* Fin Editeur Text */
   
