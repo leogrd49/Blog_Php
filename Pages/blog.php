@@ -14,8 +14,8 @@
     function blog($resultat){
         echo '
         <div class="blog-img-container">
-            <a href="lire-blog.php"><img src="'.$resultat['lien_image'].'" alt="'.$resultat['title'].'"></a>
-            <a href="lire-blog.php"><div class="white-card">
+            <a href="lire-blog.php?id='.$resultat['id_article'].'"><img src="'.$resultat['lien_image'].'" alt="'.$resultat['title'].'"></a>
+            <div class="white-card">
             <h3 class="titre-blog">'.$resultat['titre'].'</h3>
             <h4>'.$resultat['desblog'].'</h4>
             <p class="txt-blog-2"> Auteur :'.$resultat['nom'].''.$resultat['prenom'].'</p>

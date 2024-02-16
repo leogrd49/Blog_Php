@@ -9,30 +9,35 @@
     <link rel="stylesheet" href="../css/design.css">
 </head>
     <body>
+        <?php 
+        $sql = 'SELECT article.*, auteur.prenom, auteur.nom AS autnom, categorie.nom AS catnom
+        FROM article
+        JOIN auteur ON article.auteur = auteur.id_auteur
+        JOIN categorie ON article.id_categorie = categorie.id_categorie;';
+        $temp = $pdo->query($sql);
+        $article = $temp->fetch();
+        ?>
         <div class='lire-blog-container'>
             <div class='lire-blog-entete'>
-                <h3 class='titre-lire-blog'>Titre du blog</h3>
+                <h3 class='titre-lire-blog'><?php echo $article['titre'] ?></h3>
             </div>
             <div class='lire-blog-paper'>
-                <img src="../img/blog/it.jpg" alt="">
+                <img src="<?php echo $article['lien_image'] ?>" alt="<?php echo $article['title'] ?>">
                 <h4>Présentation du blog :</h4>
                 <div>
                     <p> <!-- description du blog  -->
-                    Categorie : bite
+                    Categorie : <?php echo $article['catnom']?>
                     </p>
                     <p> <!-- description du blog  -->
-                    Nom auteur : bite
+                    Nom auteur : <?php echo $article['autnom'], $article['prenom'] ?>
                     </p>
                     <p> <!-- description du blog  -->
-                    Description du blog : Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto voluptates odio! Provident iusto voluptates odio!  Harum nam deserunt praesentium reiciendis quos aliquam blanditiis molestias! Blanditiis magnam similique eveniet nulla, architecto quia laudantium natus!
+                    <?php echo $article['desblog']?>
                     </p>
                 </div>
                 <div>
                     <p class='text-lire-blog'>
-                        Blog en lui meme : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, deserunt laborum. Corporis dolorum, officia quis aliquid, nam ea nihil eius incidunt odio sint itaque similique necessitatibus excepturi aperiam reiciendis nesciunt!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, deserunt laborum. Corporis dolorum, officia quis aliquid, nam ea nihil eius incidunt odio sint itaque similique necessitatibus excepturi aperiam reiciendis nesciunt!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, deserunt laborum. Corporis dolorum, officia quis aliquid, nam ea nihil eius incidunt odio sint itaque similique necessitatibus excepturi aperiam reiciendis nesciunt!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, deserunt laborum. Corporis dolorum, officia quis aliquid, nam ea nihil eius incidunt odio sint itaque similique necessitatibus excepturi aperiam reiciendis nesciunt!
+                        <?php echo $article['description'] ?>
                     </p>
                 </div>
             </div>
