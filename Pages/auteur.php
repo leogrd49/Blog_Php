@@ -5,7 +5,7 @@
     include 'searchbar.php';
     function auteur($resultat){
         echo '  <a href="lire-auteur.php" class="lien-page-auteur">
-                <div class="carte-presentation-auteur-container">
+                <div class="carte-auteur">
                     <div class="cyan-part">
                         <h3 class="prenom-auteur">'.$resultat['prenom'].'</h3>
                         <h3 class="nom-auteur">'.$resultat['nom'].'</h3>
@@ -33,7 +33,7 @@
 </head>
     <body>
 
-        <div class='carte-auteur-container'>
+        <div class='carte-presentation-auteur-container'>
             
             <?php 
             $sql = 'SELECT * FROM auteur';
@@ -45,11 +45,5 @@
 
         </div>
         
-        <div class="fleches">
-            <ul>
-                <a href="#" class='arrow'><img src="../img/icons/fleche" alt=""></a>
-                <a href="#" class='arrow'><img src="../img/icons/fleche2" alt=""></a>
-            </ul>
-        </div>
     </body>
 </html>

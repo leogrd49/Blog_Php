@@ -66,11 +66,6 @@
                         <?php } ?>
             </div>
         <?php }?>
-        <div class="fleches">
-            <ul>
-                <a href="#" class='arrow'><img src="../img/icons/fleche" alt=""></a>
-                <a href="#" class='arrow'><img src="../img/icons/fleche2" alt=""></a>
-            </ul>
-        </div>
+
     </body>
 </html>
