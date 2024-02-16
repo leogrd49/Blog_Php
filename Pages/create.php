@@ -7,7 +7,7 @@ if ($_SESSION['log'] == 1){
 } else{
   include 'navbar-connect.php';
 }
-if ($_SESSION['log'] = 1){
+if ($_SESSION['log'] != 1){
             header('Location: login.php');
             exit();
         } else {
