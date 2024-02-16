@@ -273,7 +273,22 @@ a{
     margin-bottom: 40px;
     color: white;
 }
-
+.login-form h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.login-form a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.login-form a:hover{
+    color: #55DBCB;
+}
+.text-center{
+    text-align: center;
+}
 .input-group {
     margin-bottom: 20px;
     margin-right: 20px;
@@ -304,6 +319,7 @@ a{
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 15px;
 }
 
 .btn-submit:hover {
@@ -660,6 +676,135 @@ tr:hover {
 }
 
 /* Fin Auteur */
+
+
+/* INSCRIPTION */
+
+.ins-container {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.ins-form {
+    background: #031C30;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.ins-form h3{
+    text-align: center;
+    margin-top: 5px;
+}
+.input-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #E0CEFF;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-submit:hover {
+    background-color: #55dbcb;
+    color: white;
+}
+.login-form h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ins-form a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.ins-form a:hover{
+    color: #55DBCB;
+}
+.text-center{
+    text-align: center;
+}
+
+/* FIN INSCRIPTION */
+
+/* 
+ _     _             
+| |__ | | ___   __ _ 
+| '_ \| |/ _ \ / _` |
+| |_) | | (_) | (_| | POUR LES LIRES
+|_.__/|_|\___/ \__, |
+               |___/  */
+
+.lire-blog-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.lire-blog-entete{
+    width: 945px;
+    height: 100px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #A982FF 0%, #55DBCB 100%);
+    border: 1px solid #031C30;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    text-align: center;
+}
+.titre-lire-blog{
+    font-size: 36px;
+    margin-top: 25px;
+}
+.lire-blog-paper{
+    width: 945px;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.36);
+    border: 1px solid #031C30;
+    border-top: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* FIN LIRE BLOG */
 
 /*
  _   _             _                

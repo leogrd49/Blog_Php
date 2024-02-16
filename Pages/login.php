@@ -1,5 +1,5 @@
 <?php
-include 'navbar.php';
+include 'navbar-connect.php';
 include 'connect_base.php';
 include 'session.php';
 $loginError = '';
@@ -42,6 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="input-group">
             <label for="mdp">Mot de passe</label>
             <input type="password" name="mdp" id="mdp" required>
+        </div>
+        <div class="text-center">
+            <h3>Vous n'avez pas de compte ?</h3>
+            <a href="inscription.php">Creez en un !</a>
         </div>
         <?php echo $loginError ;?>
         <button type="submit" class="btn-submit">Se connecter</button>
