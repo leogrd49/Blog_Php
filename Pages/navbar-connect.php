@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
     
@@ -29,7 +26,7 @@
         <a href="auteur.php" class="anim1"><div class="row"><img src="../img/icons/profile.png" alt="icons pour aller à la page auteur"><p class="hidden">Authors</p></div></a>
         </div>
         <div class="login-container-navbar">
-        <a href="logout.php" class="anim2"><div class="row"><img src="../img/icons/logout.png" alt="se logout"><p class="hidden">Logout</p></div></a>
+        <a href="login.php" class="anim2"><div class="row"><img src="../img/icons/log-in.png" alt="se login"><p class="hidden">Login</p></div></a>
         </div>
     </div>
 
